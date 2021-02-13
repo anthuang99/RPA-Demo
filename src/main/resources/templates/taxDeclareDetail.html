@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>报税详情</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/base.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/style.css}">
+    <!--<script src="assets/js/jquery-1.11.1.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/default/easyui.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/icon.css}" />
+    <script type="text/javascript" th:src="@{/js/lib/v1.11.0-rc1-ext0.1/jquery.all.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/jquery-easyui-1.6.7/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/waves.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/commonDialog.js}"></script>
+    <script type="text/javascript" th:src="@{/js/taxDeclareDetail.js}"></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+    <script type="text/javascript">
+        var contextPath='[[${#httpServletRequest.getContextPath()}]]';
+        var detailStatusParam = '[[${detailStatus}]]';
+    </script>
+</head>
+
+<body>
+<div class="page-center">
+    <!-- header -->
+    <div class="header" th:insert="~{navigation :: headBar}"></div>
+    <!-- page-body -->
+    <div class="wrapper">
+        <div class="main">
+            <!-- 报税详情 -->
+            <div class="comt-top clearfix">
+                <a class="comt-title" th:href="@{/}">&lt;&nbsp;报税详情</a>
+            </div>
+            <div class="comt-tip comt-content">
+                <div class="top-search has-border clearfix mb10">
+                    <div class="fl mr10">
+                        <label class="search-title">
+                            企业名称
+                        </label>
+                        <input class="inp inp-lg" type="text" placeholder="请输入企业名称" name="name" id="name">
+
+                        <label class="search-title ml10">
+                            申报所属期（月份）
+                        </label>
+                        <input type="text" placeholder="请选择申报所属期" name="createM" id="createM">
+                        <!--
+                        <label class="select select-big vt">
+                            <input type="text" placeholder="请选择申报所属期">
+                            <em class="iconfont icon-select"></em>
+                        </label>
+                        -->
+                        <input type="text" placeholder="请选择报税状态" name="detailStatus" id="detailStatus">
+                        <!--
+                        <label class="select select-big vt">
+                            <input type="text" placeholder="请选择报税状态">
+                            <em class="iconfont icon-select"></em>
+                        </label>
+                        -->
+                        <a href="javascript:search()" class="btn btn-primary waves-effect waves-light">查询</a>
+                    </div>
+                    <div class="fr">
+                        <a href="javascript:exportFunc()" class="btn btn-primary waves-effect waves-light">导出</a>
+                    </div>
+                </div>
+                <div class="con-tab">
+                    <table id="dg"></table>
+                    <!--<table class="table1">
+                        <thead>
+                        <tr class="thead">
+                            <th width="60">序号</th>
+                            <th>企业名称</th>
+                            <th width="220">国税登录号</th>
+                            <th width="140">申报所属期(月份)</th>
+                            <th width="130">申报税种</th>
+                            <th width="80">状态</th>
+                            <th width="160">创建时间</th>
+                        </tr>
+                        </thead>
+                        <tbody class="tl">
+                        <tr class="odd">
+                            <td class="tc">1</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                <span class="c-red">失败</span>
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr>
+                            <td class="tc">2</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                成功
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="tc">1</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                <span class="c-red">失败</span>
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr>
+                            <td class="tc">2</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                成功
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="tc">1</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                <span class="c-red">失败</span>
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr>
+                            <td class="tc">2</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                成功
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="tc">1</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                <span class="c-red">失败</span>
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr>
+                            <td class="tc">2</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                成功
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr class="odd">
+                            <td class="tc">1</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                <span class="c-red">失败</span>
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        <tr>
+                            <td class="tc">2</td>
+                            <td>南通市天蓝蓝房地产咨询有限公司</td>
+                            <td>91359299MA2YADBA31</td>
+                            <td>2018-12</td>
+                            <td>印花税</td>
+                            <td>
+                                成功
+                            </td>
+                            <td>2018-12-14 15:04:23</td>
+                        </tr>
+                        </tbody>
+                    </table>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<form name="exportForm" th:action="@{/taxDeclareDetail/exportTaxDeclareDetail.json}" method="post" target="_blank">
+    <input type="hidden" name="name" value="" />
+    <input type="hidden" name="detailStatus" value="" />
+    <input type="hidden" name="createM" value="" />
+</form>
+</body>
+
+</html>

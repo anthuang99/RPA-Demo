@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>首页-首次进入</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/base.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/style.css}">
+    <!--<script type="text/javascript" th:src="@{/assets/js/jquery-1.11.1.min.js}"></script>-->
+    <script type="text/javascript" th:src="@{/js/lib/v1.11.0-rc1-ext0.1/jquery.all.min.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/waves.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/indexFirst.js}"></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+    <script type="text/javascript">
+        var contextPath='[[${#httpServletRequest.getContextPath()}]]';
+    </script>
+</head>
+
+<body>
+<div class="page-center">
+    <!-- header -->
+    <div class="header" th:insert="~{navigation :: headBar}"></div>
+    <!-- page-body -->
+    <div class="wrapper">
+        <div class="main">
+            <div class="comt-top clearfix">
+                <div class="comt-title">企业列表</div>
+            </div>
+            <div class="comt-tip" style="min-height: 350px">
+                <div class="no-data-area">
+                    <span>暂无数据</span>
+                </div>
+            </div>
+            <div class="comt-top clearfix">
+                <div class="comt-title">企业列表</div>
+            </div>
+            <div class="comt-tip" style="min-height: 150px">
+                <div class="no-data-area">
+                    <span>暂无数据</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="guide-mask" style="display: block;">
+    <div class="main">
+        <div class="guide-set">
+            <a class="handle" href="javascript:void(0)"><i class="icon-font-set"></i></a>
+            <i class="line-1"></i>
+            <i class="line-2"></i>
+            <div class="text">点击这里，设置或修改基本参数。</div>
+        </div>
+        <a class="btn btn-primary waves-effect waves-light" href="javascript:clickIKnow()">我知道了</a>
+    </div>
+</div>
+</body>
+
+</html>

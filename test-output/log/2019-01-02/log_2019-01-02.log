@@ -1,0 +1,1103 @@
+[2019-01-02 10:40:08,825] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 10:44:01,655] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 10:46:12,833] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 10:50:09,000] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 10:51:19,364] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 11:12:20,588] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 14:10:30,009] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 14:18:33,315] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 14:19:59,776] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 14:31:31,178] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 14:45:30,398] ERROR org.webdriver.patatiumwebui.utils.ProcessBuilderUtil Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+java.io.IOException: Cannot run program "E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.webdriver.patatiumwebui.utils.ProcessBuilderUtil.executeCommand(ProcessBuilderUtil.java:50)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.startProcess(SeleniumServerHubAndNodeThread.java:75)
+	at org.webdriver.patatiumwebui.thread.SeleniumServerHubAndNodeThread.run(SeleniumServerHubAndNodeThread.java:98)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 3 more
+[2019-01-02 14:56:09,919] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 14:56:09,922] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 14:56:09,971] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 14:56:12,280] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-02 14:56:12,282] ERROR org.webdriver.patatiumwebui.web.controller.CorpSettingController unknown error: failed to change window state to maximized, current state is normal
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55458}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: f09c7fe595dee93f2ec98f4ad4464488
+org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55458}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: f09c7fe595dee93f2ec98f4ad4464488
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:892)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.setup(TestBaseCase.java:67)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.pingSelenium(XmTaxTest.java:193)
+	at org.webdriver.patatiumwebui.web.controller.CorpSettingController.pingSelenium(CorpSettingController.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 14:56:24,687] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 14:56:24,688] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 14:56:24,735] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 14:56:26,134] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-02 14:56:26,134] ERROR org.webdriver.patatiumwebui.web.controller.CorpSettingController unknown error: failed to change window state to maximized, current state is normal
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55493}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 55057e224b7a2acb4c3151c805a66f78
+org.openqa.selenium.WebDriverException: unknown error: failed to change window state to maximized, current state is normal
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55493}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 55057e224b7a2acb4c3151c805a66f78
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:892)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.setup(TestBaseCase.java:67)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.pingSelenium(XmTaxTest.java:193)
+	at org.webdriver.patatiumwebui.web.controller.CorpSettingController.pingSelenium(CorpSettingController.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 14:58:20,179] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 14:58:20,180] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 14:58:20,229] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 14:58:22,063] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-02 14:58:36,184] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$ae901a96 开始报税
+[2019-01-02 14:58:58,594] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$ae901a96 开始报税
+[2019-01-02 15:01:57,126] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$4f4620da 开始报税
+[2019-01-02 15:02:00,354] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest 
+java.lang.NullPointerException
+	at org.webdriver.patatiumwebui.utils.BaseAction.open(BaseAction.java:141)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:74)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:369)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:340)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.runSingleThread(XmTaxTest.java:249)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.run(XmTaxTest.java:102)
+	at org.webdriver.patatiumwebui.App.run(App.java:117)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.webdriver.patatiumwebui.App.main(App.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2019-01-02 15:02:00,430] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest 
+java.lang.NullPointerException
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getScreenShotBase64(TaxUtil.java:37)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.writeBackBelongDateQuite(XmTaxTest.java:412)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:349)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.runSingleThread(XmTaxTest.java:249)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.run(XmTaxTest.java:102)
+	at org.webdriver.patatiumwebui.App.run(App.java:117)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.webdriver.patatiumwebui.App.main(App.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2019-01-02 15:02:46,344] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$4f4620da 开始报税
+[2019-01-02 15:02:46,564] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest 
+java.lang.NullPointerException
+	at org.webdriver.patatiumwebui.utils.BaseAction.open(BaseAction.java:141)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:74)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:369)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:340)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.runSingleThread(XmTaxTest.java:249)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.run(XmTaxTest.java:102)
+	at org.webdriver.patatiumwebui.App.run(App.java:117)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.webdriver.patatiumwebui.App.main(App.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2019-01-02 15:02:46,623] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest 
+java.lang.NullPointerException
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getScreenShotBase64(TaxUtil.java:37)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.writeBackBelongDateQuite(XmTaxTest.java:412)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:349)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.runSingleThread(XmTaxTest.java:249)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.run(XmTaxTest.java:102)
+	at org.webdriver.patatiumwebui.App.run(App.java:117)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:797)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:781)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at org.webdriver.patatiumwebui.App.main(App.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[2019-01-02 15:07:26,435] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$9a03d197 开始报税
+[2019-01-02 15:07:26,530] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 15:07:26,530] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 15:07:26,581] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 15:07:30,575] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-02 15:07:31,629] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:07:31,709] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-02 15:07:31,709] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-02 15:07:31,810] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-02 15:07:32,815] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-02 15:07:32,895] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-02 15:07:33,896] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-02 15:07:34,012] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206699949905M]
+[2019-01-02 15:07:35,016] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-02 15:07:35,093] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-02 15:07:36,094] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-02 15:07:36,145] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-02 15:07:41,611] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2019-01-02 15:07:42,998] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2019-01-02 15:07:46,116] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:07:46,116] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:07:46,154] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:07:48,087] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:07:48,087] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:07:48,111] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:07:48,111] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2019-01-02 15:07:48,147] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2019-01-02 15:07:57,290] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:07:59,496] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:07:59,496] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:07:59,532] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:07:59,532] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:07:59,568] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:08:00,883] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：本月纳税申报截止日期方式[By.xpath://*[@id='BSRL']/table/tbody/tr/td/table[1]/tbody/tr[1]/td/font]
+[2019-01-02 15:08:01,078] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:08:01,078] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:08:01,102] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:08:01,102] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:08:01,125] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:08:01,126] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2019-01-02 15:08:01,151] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:08:01,151] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:08:01,175] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:08:01,175] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:08:01,199] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:08:03,632] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:08:03,632] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:08:03,655] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:08:04,263] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:08:04,263] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:08:04,286] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:08:04,286] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:08:04,317] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:08:09,490] ERROR org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 449efdc2242be2a2a77f9761161199c4
+org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 449efdc2242be2a2a77f9761161199c4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:987)
+	at org.webdriver.patatiumwebui.utils.ElementAction.alertConfirm(ElementAction.java:686)
+	at org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction.applyTax(AddedValueTaxXmTaxAction.java:52)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyAddedValueTax(IndexXmTaxAction.java:606)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:150)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:384)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:338)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:08:09,790] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:08:09,790] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:08:09,830] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:08:09,830] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:08:09,868] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:08:09,883] ERROR org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction unknown error: $ is not defined
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 449efdc2242be2a2a77f9761161199c4
+org.openqa.selenium.WebDriverException: unknown error: $ is not defined
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 449efdc2242be2a2a77f9761161199c4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at org.webdriver.patatiumwebui.utils.ElementAction.executeJS(ElementAction.java:990)
+	at org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction.hasZzsMenu(AddedValueTaxXmTaxAction.java:181)
+	at org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction.applyTax(AddedValueTaxXmTaxAction.java:61)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyAddedValueTax(IndexXmTaxAction.java:606)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:150)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:384)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:338)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:08:11,178] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest 这些税种报税失败:增值税
+org.webdriver.patatiumwebui.exception.ApplyTaxFailException: 这些税种报税失败:增值税
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:163)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:384)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:338)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:08:11,246] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest$1 no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 449efdc2242be2a2a77f9761161199c4
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58226}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 449efdc2242be2a2a77f9761161199c4
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.tearDown(TestBaseCase.java:90)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:276)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:11:48,757] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$9a03d197 开始报税
+[2019-01-02 15:11:48,844] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 15:11:48,844] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 15:11:48,896] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 15:12:14,639] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-02 15:12:15,692] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:16,201] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:16,705] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:17,213] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:17,718] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:18,222] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:18,727] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:19,231] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:19,735] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:20,244] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:20,749] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:21,254] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:21,426] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 15:12:21,427] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 15:12:21,481] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 15:12:21,761] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:22,267] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:22,771] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:23,047] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-02 15:12:23,277] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:23,782] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:24,287] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:24,793] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:25,297] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:25,803] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:25,808] INFO  org.webdriver.patatiumwebui.utils.ElementAction 超时无法定位页面元素
+[2019-01-02 15:12:25,927] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b0be2e79759a884359715aa6af999f92
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b0be2e79759a884359715aa6af999f92
+	at sun.reflect.GeneratedConstructorAccessor54.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)
+	at org.webdriver.patatiumwebui.utils.ScreenShot.takeScreenshot(ScreenShot.java:24)
+	at org.webdriver.patatiumwebui.utils.ScreenShot.takeScreenshot(ScreenShot.java:40)
+	at org.webdriver.patatiumwebui.utils.ElementAction.findElement(ElementAction.java:306)
+	at org.webdriver.patatiumwebui.utils.ElementAction.click(ElementAction.java:567)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:83)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:365)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:336)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:12:25,958] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b0be2e79759a884359715aa6af999f92
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b0be2e79759a884359715aa6af999f92
+	at sun.reflect.GeneratedConstructorAccessor54.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getScreenShotBase64(TaxUtil.java:37)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.writeBackBelongDateQuite(XmTaxTest.java:408)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:345)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:12:25,991] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest$1 no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b0be2e79759a884359715aa6af999f92
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59585}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: b0be2e79759a884359715aa6af999f92
+	at sun.reflect.GeneratedConstructorAccessor54.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.tearDown(TestBaseCase.java:90)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:276)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:12:26,034] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 15:12:26,034] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 15:12:26,090] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 15:12:28,566] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-02 15:12:29,624] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 15:12:29,687] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-02 15:12:29,687] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-02 15:12:29,783] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-02 15:12:30,788] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-02 15:12:30,860] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-02 15:12:31,860] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-02 15:12:31,976] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350203575017700A]
+[2019-01-02 15:12:32,979] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-02 15:12:33,054] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-02 15:12:34,054] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-02 15:12:34,109] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-02 15:12:39,596] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2019-01-02 15:12:41,079] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2019-01-02 15:12:44,653] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:12:44,656] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:12:44,692] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:12:47,624] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:12:47,624] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:12:47,647] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:12:47,647] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2019-01-02 15:12:47,683] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2019-01-02 15:12:56,824] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:00,039] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:00,042] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:00,079] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:00,079] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:13:00,113] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:13:00,113] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：纳税人信息表格方式[By.xpath://*[@id='box1']/div/div[1]/table/tbody/tr/td[1]]
+[2019-01-02 15:13:03,518] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：纳税人信息表格[By.xpath://*[@id='box1']/div/div[1]/table/tbody/tr/td[1]]成功！
+[2019-01-02 15:13:04,538] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:04,538] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:04,561] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:04,561] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：纳税人税费种认定信息方式[By.xpath://*[@id='yhzx_0102']/div[2]]
+[2019-01-02 15:13:05,057] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：纳税人税费种认定信息[By.xpath://*[@id='yhzx_0102']/div[2]]成功！
+[2019-01-02 15:13:06,074] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:06,074] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:06,096] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:06,096] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:13:06,126] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:13:06,139] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:09,828] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:09,831] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:09,861] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:09,861] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:13:09,890] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:13:09,890] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2019-01-02 15:13:09,913] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:09,914] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:09,934] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:09,935] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:13:09,956] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:13:13,517] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:13,517] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:13,543] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:14,301] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:14,301] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2019-01-02 15:13:14,324] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2019-01-02 15:13:14,324] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2019-01-02 15:13:14,355] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2019-01-02 15:13:19,557] ERROR org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59822}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: cf41dd4fb28c3c3811ef9de6f2c0c5fc
+org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59822}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: cf41dd4fb28c3c3811ef9de6f2c0c5fc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:987)
+	at org.webdriver.patatiumwebui.utils.ElementAction.alertConfirm(ElementAction.java:686)
+	at org.webdriver.patatiumwebui.action.AddedValueTaxXmTaxAction.applyTax(AddedValueTaxXmTaxAction.java:52)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyAddedValueTax(IndexXmTaxAction.java:606)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:150)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:384)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:338)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 15:13:19,828] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:19,828] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:19,863] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:19,864] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:19,901] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:19,993] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:19,993] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:20,016] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:20,016] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:20,039] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:20,111] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:20,111] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:20,134] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:20,134] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:20,157] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:21,332] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:21,332] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:21,357] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:21,357] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:21,380] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:21,380] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：null方式[By.xpath://*[@id='nav']/div[2]/div/p[2]/a/span[1]]
+[2019-01-02 15:13:22,606] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：null[By.xpath://*[@id='nav']/div[2]/div/p[2]/a/span[1]]成功！
+[2019-01-02 15:13:23,617] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:23,617] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:23,642] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:23,642] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：rightFrame方式[By.xpath://*[@id='workspace']]
+[2019-01-02 15:13:23,676] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：rightFrame[By.xpath://*[@id='workspace']]成功！
+[2019-01-02 15:13:24,789] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:24,790] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:24,811] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:24,812] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:24,834] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:24,834] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：null方式[By.xpath://*[@id='nav']/div[2]/div/p[1]/a/span[1]]
+[2019-01-02 15:13:27,222] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：null[By.xpath://*[@id='nav']/div[2]/div/p[1]/a/span[1]]成功！
+[2019-01-02 15:13:28,228] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:28,228] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:28,251] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:28,251] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：rightFrame方式[By.xpath://*[@id='workspace']]
+[2019-01-02 15:13:28,272] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：rightFrame[By.xpath://*[@id='workspace']]成功！
+[2019-01-02 15:13:28,286] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：增值税纳税申报表_小规模纳税人适用_是否采用_主附税一体化申报缴税功能_否方式[By.xpath://*[@id='GDSYTHJS_FALG2']]
+[2019-01-02 15:13:28,407] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：增值税纳税申报表_小规模纳税人适用_是否采用_主附税一体化申报缴税功能_否[By.xpath://*[@id='GDSYTHJS_FALG2']]成功！
+[2019-01-02 15:13:29,504] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:29,505] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:29,527] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:29,527] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:29,550] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:29,550] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：null方式[By.xpath://*[@id='nav']/div[2]/div/p[3]/a/span[1]]
+[2019-01-02 15:13:30,267] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：null[By.xpath://*[@id='nav']/div[2]/div/p[3]/a/span[1]]成功！
+[2019-01-02 15:13:31,272] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:31,272] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:31,296] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:31,296] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：rightFrame方式[By.xpath://*[@id='workspace']]
+[2019-01-02 15:13:31,317] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：rightFrame[By.xpath://*[@id='workspace']]成功！
+[2019-01-02 15:13:31,405] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:31,405] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:31,424] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:31,424] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：leftFrame方式[By.xpath://*[@id='leftFrame']]
+[2019-01-02 15:13:31,443] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：leftFrame[By.xpath://*[@id='leftFrame']]成功！
+[2019-01-02 15:13:31,443] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：null方式[By.xpath://*[@id='nav']/div[2]/div/ul/li/a/span[1]]
+[2019-01-02 15:13:31,584] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：null[By.xpath://*[@id='nav']/div[2]/div/ul/li/a/span[1]]成功！
+[2019-01-02 15:13:31,590] INFO  org.webdriver.patatiumwebui.utils.ElementAction 点击取消按钮
+[2019-01-02 15:13:32,602] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2019-01-02 15:13:32,602] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：mainFrame方式[By.xpath://*[@id='mainFrame']]
+[2019-01-02 15:13:32,623] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：mainFrame[By.xpath://*[@id='mainFrame']]成功！
+[2019-01-02 15:13:32,623] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：rightFrame方式[By.xpath://*[@id='workspace']]
+[2019-01-02 15:13:32,647] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：rightFrame[By.xpath://*[@id='workspace']]成功！
+[2019-01-02 15:13:45,770] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest$1 no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59822}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: cf41dd4fb28c3c3811ef9de6f2c0c5fc
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59822}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: cf41dd4fb28c3c3811ef9de6f2c0c5fc
+	at sun.reflect.GeneratedConstructorAccessor54.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.tearDown(TestBaseCase.java:90)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:276)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 16:28:15,849] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$a9fee9e9 开始报税
+[2019-01-02 16:28:15,962] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-02 16:28:15,963] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-02 16:28:16,023] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-02 16:28:18,761] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-02 16:28:19,828] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-02 16:28:19,890] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-02 16:28:19,890] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-02 16:28:19,969] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-02 16:28:20,972] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-02 16:28:21,052] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-02 16:28:22,053] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-02 16:28:22,160] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206699949905M]
+[2019-01-02 16:28:23,161] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-02 16:28:23,229] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-02 16:28:24,231] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-02 16:28:24,284] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-02 16:28:29,897] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64258}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c34dad21d1a46f367f993b7c9e613741
+org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64258}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c34dad21d1a46f367f993b7c9e613741
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at org.webdriver.patatiumwebui.utils.ElementAction.executeJS(ElementAction.java:990)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:117)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:365)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:336)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 16:28:29,966] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64258}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c34dad21d1a46f367f993b7c9e613741
+org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64258}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c34dad21d1a46f367f993b7c9e613741
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getScreenShotBase64(TaxUtil.java:37)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.writeBackBelongDateQuite(XmTaxTest.java:408)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:345)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-02 16:28:30,040] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest$1 no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64258}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c34dad21d1a46f367f993b7c9e613741
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.14.0 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Anthonys-MacBook-Pro.local', ip: 'fe80:0:0:0:14a2:e377:13:840f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/7q/f1cy1fwn0tb...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64258}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: c34dad21d1a46f367f993b7c9e613741
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.tearDown(TestBaseCase.java:90)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:276)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

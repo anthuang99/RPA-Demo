@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!--<parameter name="driver" value="FirefoxDriver" />--> <!--测试浏览器：支持火狐，谷歌，IE-->
+    <parameter name="driver" value="ChromeDriver" />    <!-- 这个参数已经没用了,程序改取 application.yml 中的 driver, -->
+    <!--<parameter name="driver" value="InternetExplorerDriver" />-->
+	<parameter name="nodeURL" value="http://localhost:4444/wd/hub" /> <!-- 这个参数已经没用了,程序改取 application.yml 中的 nodeURL, selenium grid分布式运行node节点url，如不用分布式运行，则留空-->
+	<parameter name="BaseUrl" value="http://wsbsfwt1.xmtax.gov.cn:8001/" />  <!-- 测试系统基础Url-->
+	<parameter name="UserName" value="91350200MA344M8T68" /> <!-- 系统登录用户名-->
+	<parameter name="PassWord" value="sbcw1101" />  <!-- 系统登录密码-->
+    <parameter name="smtpUserName" value="" />  <!-- 测试报告邮件发送：smtp身份证验证：发件人-->
+    <parameter name="smtpPassWord" value="" />  <!-- 测试报告邮件发送：smtp身份证验证：发件人-->
+    <parameter name="smtpHost" value="" />  <!-- 测试报告邮件发送：smtp主机地址：发件人-->
+    <parameter name="smtpPort" value="" />  <!-- 测试报告邮件发送：smtp主机端口：：发件人-->
+    <parameter name="mailTitle" value="厦门税务-自动化报告" />  <!-- 测试报告邮件发送：邮件标题-->
+    <parameter name="logUrl" value="" />  <!-- 测试报告邮件发送：用例运行日志url-->
+    <parameter name="reportUrl" value="" />  <!-- 测试报告邮件发送：完整测试报告url-->
+	<parameter name="recipients" value="" /> <!-- 测试报告邮件发送：收件人，多个用,号隔开-->
+    <parameter name="reportTitle" value="厦门税务-自动化报告" />  <!--测试报告标题-->
+	<listeners><!-- 监听器设置-->
+        <listener class-name="org.webdriver.patatiumwebui.utils.TestListener"></listener>
+        <!--<listener class-name="org.webdriver.patatiumwebui.utils.TestReport"></listener>-->
+    </listeners>
+
+     <!--<test name="登录成功测试用例">
+        <classes>
+            <class name="ZEJTest">
+                <methods >
+                    <include name="login" />
+                </methods>
+            </class>
+        </classes>
+     </test>-->
+    <test name="登录成功并进入渠道编辑的测试用例">
+        <classes>
+            <class name="org.webdriver.patatiumwebui.Test.XmTaxTest">
+                <!--<methods >
+                    <include name="login" />
+                </methods>-->
+            </class>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->

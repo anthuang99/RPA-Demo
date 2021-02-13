@@ -1,0 +1,110 @@
+package org.webdriver.patatiumwebui.httprequest;
+
+import org.apache.commons.io.IOUtils;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.client.methods.RequestBuilder;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.webdriver.patatiumwebui.config.YmlConfig;
+import org.webdriver.patatiumwebui.exception.RPAException;
+import org.webdriver.patatiumwebui.utils.Log;
+import org.webdriver.patatiumwebui.web.util.SpringUtil;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/**
+ * 获取验证码的工具类
+ * @author hongjinqiu 2018.10.17
+ */
+public class CheckcodeUtil {
+    private static Log log = new Log(CheckcodeUtil.class);
+
+    /**
+     * 获取验证码
+     * @param base64
+     * @return
+     */
+    public static String getCheckcode(String base64, String fileType) {
+        YmlConfig ymlConfig = (YmlConfig) SpringUtil.getBean("ymlConfig");
+        /*
+        String testUri = ymlConfig.getCheckcode_testUri();
+         */
+
+        String uri = ymlConfig.getCheckcode_uri();
+        String taskUrl = ymlConfig.getCheckcode_taskUrl();
+
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+        RequestBuilder requestBuilder = RequestBuilder.post();
+        requestBuilder.setUri(uri);
+
+        requestBuilder.addParameter("checkJSON", getCheckJSON());
+        requestBuilder.addParameter("capImageType", fileType);//图片类型
+        requestBuilder.addParameter("taskUrl", taskUrl);
+        requestBuilder.addParameter("fileBase64", base64);//图片base64
+        requestBuilder.addParameter("bgtype", "");//背景色
+        requestBuilder.addParameter("dataType", "VerificationCode");//接口简称
+        HttpUriRequest request = requestBuilder.build();
+        try {
+            CloseableHttpResponse response = httpClient.execute(request);
+            String result = IOUtils.toString(response.getEntity().getContent());
+            httpClient.close();
+
+            JSONObject object = new JSONObject(result);
+            String statusCode = object.getString("statusCode");
+            /*
+                1001	查询成功
+                1005	查询失败
+                99	鉴权失败
+                1000	参数错误
+                98	访问受限制
+            */
+            if (!statusCode.equals("1001")) {
+                log.error("request is:" + requestBuilder);
+                log.error("return:" + result);
+                throw new RPAException("statusCode not equal to 1001");
+            }
+            JSONArray resultArray = object.getJSONArray("result");
+            JSONObject resultObject = resultArray.getJSONObject(0);
+            JSONArray verifCodeResultArray = resultObject.getJSONArray("VERIF_CODE_RESULT");
+            JSONObject verifCodeResult = verifCodeResultArray.getJSONObject(0);
+            return verifCodeResult.getString("code");
+        } catch (IOException e) {
+            log.error(e.getMessage(), e);
+            throw new RPAException(e);
+        }
+    }
+
+    /**
+     * 返回 MD5(ts+cs+AppKey)
+     * @return
+     */
+    private static String getCheckJSON() {
+        YmlConfig ymlConfig = (YmlConfig)SpringUtil.getBean("ymlConfig");
+        String cs = ymlConfig.getCheckcode_CS();
+        String appKey = ymlConfig.getCheckcode_APP_KEY();
+
+        JSONObject validateJson = new JSONObject();
+        try {
+            //检验数据拼装(
+            validateJson.put("cs", cs);
+
+            Date date = new Date();
+            String dateStr = new SimpleDateFormat("yyyyMMddHHmmss").format(date);
+            validateJson.put("ts", dateStr);
+
+            //MD5(ts+cs+AppKey)
+            String chs = MD5Util.convert(dateStr + cs + appKey);
+            validateJson.put("chs", chs);
+        } catch (JSONException e) {
+            log.error(e.getMessage(), e);
+            throw new RPAException(e);
+        }
+        return validateJson.toString();
+    }
+}

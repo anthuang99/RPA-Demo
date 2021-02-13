@@ -1,0 +1,643 @@
+[2018-12-29 10:38:24,648] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$33174106 开始报税
+[2018-12-29 10:38:24,719] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 10:38:24,722] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 10:40:28,174] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 10:40:28,175] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:29,080] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:29,637] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:30,154] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:31,290] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:31,821] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:32,372] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:32,908] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:33,449] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:33,978] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:34,493] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:35,044] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:35,588] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:36,128] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:36,672] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:37,205] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:37,742] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:38,291] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 10:40:38,341] INFO  org.webdriver.patatiumwebui.utils.ElementAction 超时无法定位页面元素
+[2018-12-29 10:40:39,005] ERROR org.webdriver.patatiumwebui.utils.ScreenShot 错误截图：D:\git\RPA-Demo\test-output\snapshot\2018-12-29 104038361.jpg
+[2018-12-29 10:40:39,005] INFO  org.webdriver.patatiumwebui.utils.ElementAction 2018-12-29 104038361
+[2018-12-29 10:40:39,006] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest null value in entry: id=null
+java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:947)
+	at org.webdriver.patatiumwebui.utils.ElementAction.switchToFrame(ElementAction.java:818)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.isReportStampTax(IndexXmTaxAction.java:197)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:63)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:388)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:333)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-29 10:40:39,474] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 10:40:39,479] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 10:40:39,480] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 10:40:47,636] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 10:46:33,070] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 10:46:33,113] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 10:46:33,124] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 10:46:33,131] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 10:46:33,135] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 10:46:33,137] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 11:05:59,072] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$cfbeafcb 开始报税
+[2018-12-29 11:05:59,129] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:05:59,129] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:21:25,054] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$271ee65a 开始报税
+[2018-12-29 11:21:25,146] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:21:25,146] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:21:51,101] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：刷新图片方式[By.xpath://*[@id='refreshIcon']]
+[2018-12-29 11:21:51,384] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：刷新图片[By.xpath://*[@id='refreshIcon']]成功！
+[2018-12-29 11:22:00,166] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：刷新图片方式[By.xpath://*[@id='refreshIcon']]
+[2018-12-29 11:22:00,403] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：刷新图片[By.xpath://*[@id='refreshIcon']]成功！
+[2018-12-29 11:22:02,910] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：刷新图片方式[By.xpath://*[@id='refreshIcon']]
+[2018-12-29 11:22:03,201] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：刷新图片[By.xpath://*[@id='refreshIcon']]成功！
+[2018-12-29 11:22:06,441] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：刷新图片方式[By.xpath://*[@id='refreshIcon']]
+[2018-12-29 11:22:06,678] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：刷新图片[By.xpath://*[@id='refreshIcon']]成功！
+[2018-12-29 11:22:14,777] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：刷新图片方式[By.xpath://*[@id='refreshIcon']]
+[2018-12-29 11:22:15,066] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：刷新图片[By.xpath://*[@id='refreshIcon']]成功！
+[2018-12-29 11:22:35,217] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:22:35,217] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:35,744] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:36,282] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:36,831] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:37,373] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:37,921] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:38,465] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:38,999] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:39,531] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:40,069] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:40,609] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:41,133] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:41,691] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:42,301] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:43,089] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:43,627] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:44,164] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:44,708] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:45,246] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:22:45,279] INFO  org.webdriver.patatiumwebui.utils.ElementAction 超时无法定位页面元素
+[2018-12-29 11:22:45,891] ERROR org.webdriver.patatiumwebui.utils.ScreenShot 错误截图：D:\git\RPA-Demo\test-output\snapshot\2018-12-29 112245287.jpg
+[2018-12-29 11:22:45,891] INFO  org.webdriver.patatiumwebui.utils.ElementAction 2018-12-29 112245287
+[2018-12-29 11:22:45,892] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest null value in entry: id=null
+java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:947)
+	at org.webdriver.patatiumwebui.utils.ElementAction.switchToFrame(ElementAction.java:818)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.isReportStampTax(IndexXmTaxAction.java:197)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:63)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:388)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:333)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-29 11:22:48,116] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 11:22:48,118] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:22:48,118] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:22:54,158] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 11:23:17,337] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$271ee65a 开始报税
+[2018-12-29 11:23:17,367] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:23:17,367] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:23:34,496] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:23:34,497] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:35,023] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:35,563] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:36,144] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:36,738] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:37,275] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:37,868] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:38,398] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:38,915] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:39,437] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:39,977] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:40,509] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:41,083] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:41,613] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:42,131] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:42,644] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:44,300] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:44,862] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:23:45,277] INFO  org.webdriver.patatiumwebui.utils.ElementAction 超时无法定位页面元素
+[2018-12-29 11:23:47,587] ERROR org.webdriver.patatiumwebui.utils.ScreenShot 错误截图：D:\git\RPA-Demo\test-output\snapshot\2018-12-29 112345286.jpg
+[2018-12-29 11:23:47,588] INFO  org.webdriver.patatiumwebui.utils.ElementAction 2018-12-29 112345286
+[2018-12-29 11:23:47,588] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest null value in entry: id=null
+java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:947)
+	at org.webdriver.patatiumwebui.utils.ElementAction.switchToFrame(ElementAction.java:818)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.isReportStampTax(IndexXmTaxAction.java:197)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:63)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:388)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:333)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-29 11:23:51,788] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest Session [3d7cf3662cb675c2a0ec59a4ec23aac7] not available and is not among the last 1000 terminated sessions.
+Active sessions are[]
+Command duration or timeout: 0 milliseconds
+org.openqa.selenium.WebDriverException: Session [3d7cf3662cb675c2a0ec59a4ec23aac7] not available and is not among the last 1000 terminated sessions.
+Active sessions are[]
+Command duration or timeout: 0 milliseconds
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.tearDown(TestBaseCase.java:90)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:344)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.WebDriverException: Session [3d7cf3662cb675c2a0ec59a4ec23aac7] not available and is not among the last 1000 terminated sessions.
+Active sessions are[]
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PC-20170909EZEX', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:120)
+	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:379)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
+	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
+	at java.lang.Thread.run(Unknown Source)
+[2018-12-29 11:23:56,140] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$271ee65a 开始报税
+[2018-12-29 11:23:56,186] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:23:56,187] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:24:13,491] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:24:13,492] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:14,018] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:14,548] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:15,099] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:15,971] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:16,516] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:17,041] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:17,588] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:18,111] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:18,649] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:19,194] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:19,739] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:20,267] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:20,816] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:21,336] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:21,883] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:22,418] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:22,959] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:23,501] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:24:23,530] INFO  org.webdriver.patatiumwebui.utils.ElementAction 超时无法定位页面元素
+[2018-12-29 11:24:24,169] ERROR org.webdriver.patatiumwebui.utils.ScreenShot 错误截图：D:\git\RPA-Demo\test-output\snapshot\2018-12-29 112423547.jpg
+[2018-12-29 11:24:24,171] INFO  org.webdriver.patatiumwebui.utils.ElementAction 2018-12-29 112423547
+[2018-12-29 11:24:24,171] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest null value in entry: id=null
+java.lang.NullPointerException: null value in entry: id=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:947)
+	at org.webdriver.patatiumwebui.utils.ElementAction.switchToFrame(ElementAction.java:818)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.isReportStampTax(IndexXmTaxAction.java:197)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:63)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:388)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:333)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-29 11:24:24,869] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 11:24:24,871] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:24:24,871] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:24:29,766] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 11:24:31,719] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$271ee65a 开始报税
+[2018-12-29 11:24:31,755] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:24:31,757] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:24:51,350] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：刷新图片方式[By.xpath://*[@id='refreshIcon']]
+[2018-12-29 11:24:51,587] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：刷新图片[By.xpath://*[@id='refreshIcon']]成功！
+[2018-12-29 11:34:29,214] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$2cdda6fb 开始报税
+[2018-12-29 11:34:29,274] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:34:29,274] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:34:37,935] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 11:34:38,941] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 11:34:39,375] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 11:34:39,376] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 11:34:39,548] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 11:34:40,548] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 11:34:40,623] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 11:34:41,623] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 11:34:41,847] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350200MA2XNRFW7P]
+[2018-12-29 11:34:42,847] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 11:34:42,957] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 11:34:43,957] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 11:34:44,029] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:sx154575]
+[2018-12-29 11:35:19,312] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 11:35:21,187] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 11:35:31,862] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:35:31,863] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:35:31,918] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 11:35:34,220] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:35:34,220] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:35:34,280] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 11:35:34,280] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 11:35:34,332] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 11:35:43,661] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:35:45,887] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:35:45,887] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:35:45,936] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 11:35:45,936] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 11:35:45,983] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 11:35:48,411] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：本月纳税申报截止日期方式[By.xpath://*[@id='BSRL']/table/tbody/tr/td/table[1]/tbody/tr[1]/td/font]
+[2018-12-29 11:35:48,642] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 11:35:48,643] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 11:35:48,695] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 11:35:48,695] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 11:35:48,741] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 11:35:48,741] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2018-12-29 11:35:48,940] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 11:35:48,943] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 11:35:48,943] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 11:35:54,444] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 13:48:23,086] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 13:48:23,095] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 13:48:23,103] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 13:48:23,106] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 13:48:23,109] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 13:48:23,117] INFO  org.webdriver.patatiumwebui.pageObjectConfig.PageObjectAutoCodeXmTax 自动生成对象库java代码成功
+[2018-12-29 13:57:00,728] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$ef9a13d7 开始报税
+[2018-12-29 13:57:24,009] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$ef9a13d7 开始报税
+[2018-12-29 13:59:37,854] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$67a057c5 开始报税
+[2018-12-29 14:01:01,974] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$67a057c5 开始报税
+[2018-12-29 14:01:02,029] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:01:02,031] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:01:11,225] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:01:12,267] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:01:12,391] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:01:12,391] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:01:12,482] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:01:13,482] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:01:13,578] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:01:14,578] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:01:14,720] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350200MA2XNRFW7P]
+[2018-12-29 14:01:15,720] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:01:15,794] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:01:16,794] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:01:16,903] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:sx154575]
+[2018-12-29 14:02:04,151] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：验证码方式[By.xpath://*[@id='checkCode']]
+[2018-12-29 14:03:11,194] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$6c123981 开始报税
+[2018-12-29 14:03:11,262] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:03:11,262] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:03:19,291] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:03:20,309] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:03:20,403] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:03:20,403] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:03:20,524] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:03:21,524] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:03:21,620] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:03:22,621] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:03:22,779] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350200MA2XNRFW7P]
+[2018-12-29 14:03:23,780] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:03:23,912] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:03:24,912] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:03:25,018] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:sx154575]
+[2018-12-29 14:04:07,697] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：验证码方式[By.xpath://*[@id='checkCode']]
+[2018-12-29 14:11:30,355] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$a284a1c8 开始报税
+[2018-12-29 14:11:30,405] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:11:30,405] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:11:39,130] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:11:40,142] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:11:40,240] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:11:40,240] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:11:40,336] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:11:41,337] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:11:41,413] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:11:42,413] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:11:42,567] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350200MA2XNRFW7P]
+[2018-12-29 14:11:43,567] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:11:43,692] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:11:44,692] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:11:44,824] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:sx154575]
+[2018-12-29 14:12:40,930] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 14:12:42,409] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 14:12:46,696] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:12:46,698] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:12:46,770] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:12:49,340] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:12:49,341] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:12:49,422] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:12:49,422] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 14:12:49,484] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 14:12:58,930] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:13:02,412] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:13:02,412] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:13:02,456] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:13:02,456] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 14:13:02,500] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 14:13:02,501] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2018-12-29 14:13:02,718] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:13:02,721] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:13:02,721] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:13:11,355] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:15:04,866] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$a284a1c8 开始报税
+[2018-12-29 14:15:04,929] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:15:04,929] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:15:10,464] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:15:11,467] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:15:11,553] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:15:11,553] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:15:11,642] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:15:12,643] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:15:12,735] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:15:13,735] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:15:13,932] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350200MA2XNRFW7P]
+[2018-12-29 14:15:14,933] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:15:15,027] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:15:16,027] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:15:16,137] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:sx154575]
+[2018-12-29 14:15:21,827] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 14:15:23,715] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 14:15:27,355] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:15:27,355] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:15:27,407] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:15:30,508] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:15:30,508] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:15:30,543] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:15:30,543] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 14:15:30,584] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 14:15:39,887] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:15:43,084] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:15:43,084] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:15:43,127] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:15:43,127] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 14:15:43,188] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 14:15:43,188] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2018-12-29 14:15:43,334] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:15:43,338] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:15:43,338] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:15:48,244] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:15:48,250] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:15:48,250] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:15:55,842] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:15:56,847] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:15:56,960] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:15:56,960] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:15:57,044] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:15:58,044] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:15:58,137] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:15:59,137] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:15:59,287] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350203MA2XN5NB6M]
+[2018-12-29 14:16:00,288] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:16:00,427] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:16:01,427] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:16:01,511] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:77277ZYD]
+[2018-12-29 14:16:07,805] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 14:16:09,165] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 14:16:12,579] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:16:12,579] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:16:12,625] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:16:14,982] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:16:14,982] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:16:15,021] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:16:15,021] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 14:16:15,062] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 14:16:24,436] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:16:28,529] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:16:28,529] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:16:28,568] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:16:28,569] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 14:16:28,612] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 14:16:28,612] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2018-12-29 14:16:28,770] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:16:28,773] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:16:28,773] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:16:33,679] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:16:33,698] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:16:33,698] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:16:40,614] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:16:41,626] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:16:41,723] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:16:41,723] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:16:41,805] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:16:42,805] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:16:42,908] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:16:43,908] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:16:44,042] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206MA348HF44U]
+[2018-12-29 14:16:45,042] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:16:45,124] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:16:46,124] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:16:46,226] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:77277ZYD]
+[2018-12-29 14:16:51,819] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 14:16:53,251] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 14:16:56,519] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:16:56,519] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:16:56,565] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:16:59,210] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:16:59,210] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:16:59,244] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:16:59,244] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 14:16:59,292] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 14:17:08,559] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:17:11,939] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:17:11,939] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:17:11,974] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:17:11,974] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 14:17:12,014] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 14:17:12,014] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2018-12-29 14:17:12,181] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:17:12,183] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:17:12,183] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:17:17,953] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:17:17,959] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:17:17,959] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:17:25,049] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 14:17:26,053] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 14:17:26,147] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 14:17:26,147] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 14:17:26,240] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 14:17:27,240] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:17:27,340] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 14:17:28,340] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 14:17:28,464] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206089926087M]
+[2018-12-29 14:17:29,464] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:17:29,526] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 14:17:30,526] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 14:17:30,615] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2018-12-29 14:17:36,133] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 14:17:37,081] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 14:17:40,724] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:17:40,724] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:17:40,806] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:17:43,134] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:17:43,134] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:17:43,164] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:17:43,165] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 14:17:43,204] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 14:17:52,612] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:17:56,789] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 14:17:56,789] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 14:17:56,881] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 14:17:56,881] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content方式[By.xpath://*[@id='table_right_content']]
+[2018-12-29 14:17:57,001] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content[By.xpath://*[@id='table_right_content']]成功！
+[2018-12-29 14:17:57,001] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：我的待办表身内容方式[By.xpath://*[@id='undertable']]
+[2018-12-29 14:17:57,143] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:17:57,145] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:17:57,145] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:18:02,443] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:27:44,220] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:27:44,220] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:27:48,482] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 14:31:12,711] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 14:31:12,712] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 14:31:18,468] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2018-12-29 16:01:38,333] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$9a2d0b81 开始报税
+[2018-12-29 16:01:38,410] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2018-12-29 16:01:38,410] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置：浏览器:ChromeDriver；gridNodeURL:http://localhost:4444/wd/hub
+[2018-12-29 16:01:47,025] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2018-12-29 16:01:48,045] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2018-12-29 16:01:48,147] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2018-12-29 16:01:48,147] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2018-12-29 16:01:48,241] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2018-12-29 16:01:49,241] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 16:01:49,314] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2018-12-29 16:01:50,314] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2018-12-29 16:01:50,485] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350200MA2XNRFW7P]
+[2018-12-29 16:01:51,485] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 16:01:51,601] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2018-12-29 16:01:52,601] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2018-12-29 16:01:52,690] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:sx154575]
+[2018-12-29 16:01:58,544] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录方式[By.xpath://*[@id='qy_submit']]
+[2018-12-29 16:01:59,732] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录[By.xpath://*[@id='qy_submit']]成功！
+[2018-12-29 16:02:03,438] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 16:02:03,438] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 16:02:03,486] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 16:02:06,283] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToDefaultFrame 成功!
+[2018-12-29 16:02:06,283] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_content方式[By.xpath://*[@id='table_content']]
+[2018-12-29 16:02:06,319] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_content[By.xpath://*[@id='table_content']]成功！
+[2018-12-29 16:02:06,320] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：table_right_content2方式[By.xpath://*[@id='table_right_content2']]
+[2018-12-29 16:02:06,367] INFO  org.webdriver.patatiumwebui.utils.ElementAction switchToFrame元素：table_right_content2[By.xpath://*[@id='table_right_content2']]成功！
+[2018-12-29 16:02:21,756] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest chrome not reachable
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PC-20170909EZEX', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.80, webStorageEnabled: true, webdriver.remote.sessionid: 935b87ae90f5084a5fd3c0a51d2...}
+Session ID: 935b87ae90f5084a5fd3c0a51d274616
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PC-20170909EZEX', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.80, webStorageEnabled: true, webdriver.remote.sessionid: 935b87ae90f5084a5fd3c0a51d2...}
+Session ID: 935b87ae90f5084a5fd3c0a51d274616
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:537)
+	at org.webdriver.patatiumwebui.utils.ElementAction.executeJS(ElementAction.java:990)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.isReportStampTax(IndexXmTaxAction.java:238)
+	at org.webdriver.patatiumwebui.action.IndexXmTaxAction.applyTaxNeedToReport(IndexXmTaxAction.java:63)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doIndexApplyTax(XmTaxTest.java:388)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:333)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2018-12-29 16:02:21,969] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest chrome not reachable
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PC-20170909EZEX', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.80, webStorageEnabled: true, webdriver.remote.sessionid: 935b87ae90f5084a5fd3c0a51d2...}
+Session ID: 935b87ae90f5084a5fd3c0a51d274616
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=71.0.3578.80)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PC-20170909EZEX', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51053}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.80, webStorageEnabled: true, webdriver.remote.sessionid: 935b87ae90f5084a5fd3c0a51d2...}
+Session ID: 935b87ae90f5084a5fd3c0a51d274616
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+	at org.webdriver.patatiumwebui.utils.TestBaseCase.tearDown(TestBaseCase.java:90)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:344)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:270)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

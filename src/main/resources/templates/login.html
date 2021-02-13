@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/base.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/login.css}">
+    <!--<script type="text/javascript" th:src="@{/assets/js/jquery-1.11.1.min.js}"></script>-->
+    <script type="text/javascript" th:src="@{/js/lib/v1.11.0-rc1-ext0.1/jquery.all.min.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/waves.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/login.js}"></script>
+    <script type="text/javascript">
+        var contextPath='[[${#httpServletRequest.getContextPath()}]]';
+    </script>
+</head>
+
+<body class="body-login">
+<div class="login login-left">
+    <div class="login-in">
+        <div class="login-logo">
+            <img th:src="@{/assets/images/all/login-logo.png}" alt="">
+        </div>
+        <div class="login-body">
+            <div class="login-title">登录</div>
+            <div class="login-form">
+                <!--<form id="loginForm" action="" method="post">-->
+                    <!-- item-focus 鼠标移入效果，item-error输入报错状态，item-success输入成确状态 -->
+                    <div class="item item-error">
+                        <input class="inp" id="username" name="username" type="text" placeholder="用户名" value="">
+                        <div class="msg-box" style="display: none;" id="usernameTip">
+                            <div class="error"><i></i>账户名不能为空，长度不超过200！</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input class="inp" id="password" name="password" type="password" placeholder="密码" value="">
+                        <div class="msg-box" style="display: none;" id="passwordTip">
+                            <div class="error"><i></i>密码不能为空，长度不超过200！</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input class="inp" type="text" id="domainName" name="domainName" placeholder="域名" value="">
+                        <div class="msg-box" style="display: none;" id="domainNameTip">
+                            <div class="error"><i></i>域名不能为空，长度不超过200！</div>
+                        </div>
+                    </div>
+                    <!-- 输错三次出现验证码 -->
+                <!--</form>-->
+                <!--<button class="btn btn-primary waves-effect waves-light" id="loginBtn" type="submit">登 录</button>-->
+                <button class="btn btn-primary waves-effect waves-light" id="loginBtn" type="button">登 录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

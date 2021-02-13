@@ -1,0 +1,113 @@
+## default config
+server:
+  port: 8085
+  session:
+    timeout: 60
+  context-path: /home
+  contextPath: /home
+  undertow:
+    accesslog:
+      enabled: true
+      dir: /home/deploy/log/app/
+      prefix: malay-acct-web-access.
+      pattern: combined   # 格式"%h %l %u %t %r %s %b %{i,Referer} %{i,User-Agent}“
+
+
+spring:
+  profiles:
+    active: dev
+  mvc:
+    view:
+      prefix: /views/
+      suffix: .jsp
+  aop:
+    auto: true
+    proxy-target-class: true
+#  datasource:
+#    name: dataSource
+#    type: org.apache.tomcat.jdbc.pool.DataSource
+#    driver-class-name: org.postgresql.Driver
+#    tomcat:
+#      jdbc-interceptors: ConnectionState;StatementFinalizer
+#      validation-query: select 1
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/onlyou_tax
+    username: sa
+    password:
+  batch:
+    initialize-schema: always
+    job:
+      enabled: false
+  h2:
+    console:
+      enabled: true
+  thymeleaf:
+    cache: false
+  freemarker:
+    cache: false
+  velocity:
+    cache: false
+
+tax-prop:
+  checkcode_testUri: http://api.bigdata.test.onlyou.com/api/vcode/query
+  checkcode_uri: http://api.bigdata.onlyou.com/api/vcode/query
+  #checkcode_taskUrl: http://wsbsfwt2.xmtax.gov.cn:8001/
+  checkcode_taskUrl: https://wsbsfwt3.xmtax.gov.cn/
+  checkcode_CS: xmtorch_test
+  checkcode_APP_KEY: E5D43A65327130179AAEE56BB5D6F7E7
+  #baseUrl: http://wsbsfwt1.xmtax.gov.cn:8001/
+  baseUrl: https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do
+  #driver: ChromeDriver
+  #driver: InternetExplorerDriver
+  #driver: FirefoxDriver
+  nodeURL: http://localhost:4444/wd/hub
+  zyd_token_key_cs: ZYD_XM_TAX_CLIENT
+  zyd_token_key_chs: TAX_INTERFACE_ZYD_XM_CLIENT
+  seleniumServerPort: 4444
+  seleniumNodePort: 5555
+
+
+logging:
+  level:
+    root: debug
+  file: /home/deploy/log/rpa-batch-log/rpa-batch
+
+---
+spring:
+  profiles: dev
+tax-prop:
+  corpListUrl: http://localhost:8085/corpListSimulation/getCorpListSimulation.json
+  taxDeclareDetailUrl: http://localhost:8085/taxDeclareDetailSimulation/getTaxDeclareDetailSimulation.json
+  writeBackTaxResult: http://localhost:8085/writeBackBelongDate/writeBackBelongDate.json
+#  corpListUrl: http://172.16.135.101:8080/vop/interface/xm/tax/getZydXMTaxCorpInfoPage.json
+#  taxDeclareDetailUrl: http://172.16.135.101:8080/vop/interface/xm/tax/getCorpInv.json
+#  writeBackTaxResult: http://172.16.135.101:8080/vop/interface/xm/tax/setZydXMTaxInfo.json
+#  corpListUrl: http://accounting.zyd.onlyou.com/vop/interface/xm/tax/getZydXMTaxCorpInfoPage.json
+#  taxDeclareDetailUrl: http://accounting.zyd.onlyou.com/vop/interface/xm/tax/getCorpInv.json
+#  writeBackTaxResult: http://accounting.zyd.onlyou.com/vop/interface/xm/tax/setZydXMTaxInfo.json
+  isDev: true
+  isClickLogin: true
+  timeOutInSeconds: 10
+  seleniumServerExe: E:\hongjinqiu\tmp\zeroTax_output\selenium-server-64bit.exe
+  seleniumNodeChromeExe: E:\hongjinqiu\tmp\zeroTax_output\selenium-node-chrome-64bit.exe
+  seleniumNodeFirefoxExe: E:\hongjinqiu\tmp\zeroTax_output\selenium-node-firefox-64bit.exe
+  seleniumNodeIEExe: E:\hongjinqiu\tmp\zeroTax_output\selenium-node-ie-64bit.exe
+
+---
+spring:
+  profiles: official
+tax-prop:
+#  corpListUrl: http://localhost:8085/corpListSimulation/getCorpListSimulation.json
+#  taxDeclareDetailUrl: http://localhost:8085/taxDeclareDetailSimulation/getTaxDeclareDetailSimulation.json
+#  writeBackTaxResult: http://localhost:8085/writeBackBelongDate/writeBackBelongDate.json
+  corpListUrl: http://accounting.zyd.onlyou.com/vop/interface/xm/tax/getZydXMTaxCorpInfoPage.json
+  taxDeclareDetailUrl: http://accounting.zyd.onlyou.com/vop/interface/xm/tax/getCorpInv.json
+  writeBackTaxResult: http://accounting.zyd.onlyou.com/vop/interface/xm/tax/setZydXMTaxInfo.json
+  isDev: false
+  isClickLogin: true
+  timeOutInSeconds: 20
+  seleniumServerExe: selenium-server-64bit.exe
+  seleniumNodeChromeExe: selenium-node-chrome-64bit.exe
+  seleniumNodeFirefoxExe: selenium-node-firefox-64bit.exe
+  seleniumNodeIEExe: selenium-node-ie-64bit.exe

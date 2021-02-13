@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [TestNG]">
+  <parameter name="first-name" value="credic"/>
+  <test name="regression1(failed)">
+    <groups>
+      <run>
+        <exclude name="excludedGroup"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="org.webdriver.patatiumwebui.Test.XmTaxTest">
+        <methods>
+          <include name="run"/>
+        </methods>
+      </class> <!-- org.webdriver.patatiumwebui.Test.XmTaxTest -->
+    </classes>
+  </test> <!-- regression1(failed) -->
+</suite> <!-- Failed suite [TestNG] -->

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--整个对象库文件的根目录，管理整个项目的对象-->
+<map>
+    <!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
+    Pagename:page对象名字，格式：net.hk515.PageObject.xxxPage;最后面那位才是真正的页面名字，前面的是java对象库路径；
+    另外注意，页面名字是头个单词大写；例如主页：名字定义为 net.hk515.PageObject.HomePage
+    Value：页面对象的URL，可不填。
+    Desc:页面对象中文描述-->
+	<page pagename="org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage" value="" desc="厦门税务登录页面">
+		<!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
+        Type：定位方式，包含id,name,class,linktext,xpath,css等，定位元素的时候灵活使用，一般可以统一用xpath
+        代替id,name,class，linktext的定位方式。
+        Timeout：元素加载时间，有些页面元素，可能要等待一段时间才能加载过来，为了查找元素的稳定性，需加等待时间。
+        Value:元素定位信息，如果是id,name,class，linktext直接把网页元素对应的这些属性值写上即可，如果是xpath定位方式，
+        需要填写正确的xpath语法格式。
+        Desc:元素的描述，元素的中文描述信息-->
+		<locator type="xpath" timeout="0" value="//*[@id='loginId']"  desc="用户名">用户名</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='userPassword']"  desc="密码2">密码2</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='checkCode']"  desc="验证码">验证码</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='qy_submit']"  desc="登录">登录</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='checkCodeImage']"  desc="验证码图片">验证码图片</locator>
+
+		<!-- new ui 2018_11_20 -->
+		<locator type="xpath" timeout="0" value="//*[@id='layui-layer1']/div[3]/a"  desc="浏览器版本提示确定按钮">浏览器版本提示确定按钮</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='Login']/a"  desc="登录链接">登录链接</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='main_img']"  desc="验证码图片_拖动">验证码图片_拖动</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='refreshIcon']"  desc="刷新图片">刷新图片</locator>
+	</page>
+
+	<page pagename="org.webdriver.patatiumwebui.pageObject.IndexXmTaxPage" value="" desc="厦门税务首页">
+		<!--管理一个页面的元素（webelement：input,select,textare,a,li等标签），一个page包含多个locator对象
+        Type：定位方式，包含id,name,class,linktext,xpath,css等，定位元素的时候灵活使用，一般可以统一用xpath
+        代替id,name,class，linktext的定位方式。
+        Timeout：元素加载时间，有些页面元素，可能要等待一段时间才能加载过来，为了查找元素的稳定性，需加等待时间。
+        Value:元素定位信息，如果是id,name,class，linktext直接把网页元素对应的这些属性值写上即可，如果是xpath定位方式，
+        需要填写正确的xpath语法格式。
+        Desc:元素的描述，元素的中文描述信息-->
+		<locator type="xpath" timeout="0" value="//*[@id='sy']"  desc="首页">indexImg</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='sbns']"  desc="申请报税">applyTax</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[1]/td[1]/img"  desc="增值税及附加税费">addedValueTax</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[1]/td[3]/img"  desc="企业所得税">enterpriseIncomeTax</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[1]/td[4]/img"  desc="个人所得税">individualIncomeTax</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[1]/td[6]/img"  desc="印花税">stampTax</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[1]/td[5]/img"  desc="城建税及附加">additionalTax</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[2]/td[7]/img"  desc="文化事业建设费">culturalConstructionCosts</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[2]/td[5]/img"  desc="地方各项基金费(在工会经费菜单下)">localFunds</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='tab2']/tbody/tr[1]/td[2]/img"  desc="消费税">consumptionTax</locator>
+		<locator type="xpath" timeout="0" value="-------------------------------------"  desc="社保">socialSecurity</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='wsblb']"  desc="未申报">未申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='ysblb']"  desc="已申报">已申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='iframe1']"  desc="iframe1">iframe1</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='wnl']/iframe" desc="iframe1_日期框">iframe1_日期框</locator>
+
+		<!-- new UI -->
+		<locator type="xpath" timeout="0" value="//*[@id='table_content']" desc="table_content">table_content</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='table_right_content']" desc="table_right_content">table_right_content</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='table_right_content2']" desc="table_right_content2">table_right_content2</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='gzfw']" desc="公众服务">公众服务</locator>
+		<locator type="xpath" timeout="0" value="/html/body/div/div/div[1]/div/div/div[5]/div/div[2]/ul/li[9]" desc="办税日历">办税日历</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='BSRL']/table/tbody/tr/td/table[1]/tbody/tr[1]/td/font" desc="本月纳税申报截止日期">本月纳税申报截止日期</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='undertable']" desc="我的待办表身内容">我的待办表身内容</locator>
+		<locator type="xpath" timeout="0" value="/html/body/div/div/div[1]/div/div/div[2]/table/tbody/tr[1]/td[3]" desc="办税中心_税费申报及缴纳">办税中心_税费申报及缴纳</locator>
+		<locator type="xpath" timeout="0" value="/html/body/div/div/div[1]/div/div/div[2]/table/tbody/tr[1]/td[3]/span" desc="办税中心_税费申报及缴纳_文字">办税中心_税费申报及缴纳_文字</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_0301']/div[2]" desc="增值税及附加税费申报">增值税及附加税费申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_030101']/div/span[2]" desc="增值税申报">增值税申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_0304']/div[2]" desc="其他申报">其他申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_0305']/div[2]" desc="综合申报">综合申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_030501']/div/span[2]" desc="工会经费申报">工会经费申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_030409']/div/span[2]" desc="城建税及附加申报">城建税及附加申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='bszx_030405']/div/span[2]" desc="印花税申报">印花税申报</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='TableList']/tbody/tr/td[2]" desc="申报信息查询">申报信息查询</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='box1']/div/div[1]/table/tbody/tr/td[1]" desc="纳税人信息表格">纳税人信息表格</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='yhzx_0102']/div[2]" desc="纳税人税费种认定信息">纳税人税费种认定信息</locator>
+	</page>
+
+	<page pagename="org.webdriver.patatiumwebui.pageObject.AddedValueTaxXmTaxPage" value="" desc="我的办事大厅-增值税及附加税费">
+		<locator type="xpath" timeout="0" value="//*[@id='mainFrame']"  desc="我的办税大厅-mainFrame">mainFrame</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='leftFrame']"  desc="我的办税大厅-mainFrame-leftFrame">leftFrame</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='workspace']"  desc="我的办税大厅-mainFrame-rightFrame">rightFrame</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[1]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-企业会计准则（一般企业）财务报表资产负债表">balanceSheetMenu</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[2]/p/a/span"  desc="我的办税大厅-mainFrame-leftFrame-(2018年企业会计准则财务报表-第一季)">第一季</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[2]/div/p[3]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-(2018年企业会计准则财务报表-第一季)-(企业会计准则（一般企业）财务报表信息查询)">第一季_财务报表信息查询</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='ZC_QMS1']"  desc="我的办税大厅-mainFrame-rightFrame-货币资金_期末余额">货币资金_期末余额</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[1]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-第一个菜单">第一个菜单</locator>		<!--待删除-->
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/p/a"  desc="我的办税大厅-mainFrame-leftFrame-第一个主菜单">第一个主菜单</locator>
+
+		<!-- 小规模纳税人 begin -->
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[2]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表_小规模纳税人适用_附列资料">增值税纳税申报表_小规模纳税人适用_附列资料</locator>		<!--待删除-->
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/form/div/a[2]"  desc="我的办税大厅-mainFrame-rightFrame-增值税纳税申报表_小规模纳税人适用_附列资料_保存">增值税纳税申报表_小规模纳税人适用_附列资料_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[1]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表_小规模纳税人适用">增值税纳税申报表_小规模纳税人适用</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='inputTable']/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[4]/td/table/tbody/tr[2]/td[1]"  desc="我的办税大厅-mainFrame-rightFrame-增值税纳税申报表_小规模纳税人适用_所属时期">增值税纳税申报表_小规模纳税人适用_所属时期</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='inputTable']/tbody/tr/td/form/div/a[1]"  desc="我的办税大厅-mainFrame-rightFrame-增值税纳税申报表_小规模纳税人适用_保存">增值税纳税申报表_小规模纳税人适用_保存</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='GDSYTHJS_FALG1']"  desc="我的办税大厅-mainFrame-rightFrame-增值税纳税申报表_小规模纳税人适用_是否采用_主附税一体化申报缴税功能_是">增值税纳税申报表_小规模纳税人适用_是否采用_主附税一体化申报缴税功能_是</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='GDSYTHJS_FALG2']"  desc="我的办税大厅-mainFrame-rightFrame-增值税纳税申报表_小规模纳税人适用_是否采用_主附税一体化申报缴税功能_否">增值税纳税申报表_小规模纳税人适用_是否采用_主附税一体化申报缴税功能_否</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[3]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税减免税申报明细表_小规模纳税人适用">增值税减免税申报明细表_小规模纳税人适用</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/form/p/table/tbody/tr/td/a[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税减免税申报明细表_小规模纳税人适用_保存">增值税减免税申报明细表_小规模纳税人适用_保存</locator>
+		<!-- 小规模纳税人 end -->
+		<!-- 一般纳税人 begin -->
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[1]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税申报表_一般纳税人适用">增值税申报表_一般纳税人适用</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='GDSYTHJS_FALG1']"  desc="我的办税大厅-mainFrame-leftFrame-增值税申报表_一般纳税人适用_是否采用_主附税一体化申报缴税功能_是">增值税申报表_一般纳税人适用_是否采用_主附税一体化申报缴税功能_是</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='inputTable']/tbody/tr/td/table/tbody/tr[2]/td/div/a[1]"  desc="增值税申报表_一般纳税人适用_保存">增值税申报表_一般纳税人适用_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='inputTable']/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[4]/td/table/tbody/tr[2]/td[1]"  desc="我的办税大厅-mainFrame-rightFrame-增值税申报表_一般纳税人适用_所属时期">增值税申报表_一般纳税人适用_所属时期</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[2]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表附列资料_一">增值税纳税申报表附列资料_一</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/div/a[1]"  desc="增值税纳税申报表附列资料_一_保存">增值税纳税申报表附列资料_一_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[3]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表附列资料_二">增值税纳税申报表附列资料_二</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td/div/a[1]"  desc="增值税纳税申报表附列资料_二_保存">增值税纳税申报表附列资料_二_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[4]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表附列资料_三">增值税纳税申报表附列资料_三</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='inputTable']/tbody/tr[2]/td/div[2]/a[1]"  desc="增值税纳税申报表附列资料_三_保存">增值税纳税申报表附列资料_三_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[5]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表附列资料_四">增值税纳税申报表附列资料_四</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/form/div/a[1]"  desc="增值税纳税申报表附列资料_四_保存">增值税纳税申报表附列资料_四_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[6]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税纳税申报表附列资料_五">增值税纳税申报表附列资料_五</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/form/p/table/tbody/tr/td/a[1]"  desc="增值税纳税申报表附列资料_五_保存">增值税纳税申报表附列资料_五_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[7]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-增值税减免税申报明细表">增值税减免税申报明细表</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/form/p/table/tbody/tr/td/a[1]"  desc="增值税减免税申报明细表_保存">增值税减免税申报明细表_保存</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[9]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-农产品收购发票或普通发票明细表">农产品收购发票或普通发票明细表</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/form/table/tbody/tr[6]/td/div/a[1]"  desc="我的办税大厅-mainFrame-leftFrame-农产品收购发票或普通发票明细表_保存">农产品收购发票或普通发票明细表_保存</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/p[8]/a/span[1]"  desc="我的办税大厅-mainFrame-leftFrame-营改增税负分析测算明细表">营改增税负分析测算明细表</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='SB_CSMXB_TBODY']/tr/td[1]/select"  desc="我的办税大厅-mainFrame-leftFrame-营改增税负分析测算明细表_应税项目代码及名称">应税项目代码及名称</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='SB_CSMXB_TBODY']/tr/td[2]/select"  desc="我的办税大厅-mainFrame-leftFrame-营改增税负分析测算明细表_增值税税率或征收率">增值税税率或征收率</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='SB_CSMXB_TBODY']/tr/td[3]/select"  desc="我的办税大厅-mainFrame-leftFrame-营改增税负分析测算明细表_营业税税率">营业税税率</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='nav']/div[1]/div/ul/li/a/span[1]"  desc="正式申报">正式申报</locator>
+
+		<!-- 一般纳税人 end -->
+
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/input[1]"  desc="我的办税大厅-mainFrame-rightFrame-查询范围_开始年">查询范围_开始年</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/input[2]"  desc="我的办税大厅-mainFrame-rightFrame-查询范围_开始月">查询范围_开始月</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/input[3]"  desc="我的办税大厅-mainFrame-rightFrame-查询范围_结束年">查询范围_结束年</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/input[4]"  desc="我的办税大厅-mainFrame-rightFrame-查询范围_结束月">查询范围_结束月</locator>
+		<locator type="xpath" timeout="0" value="/html/body/table/tbody/tr/td/table/tbody/tr[2]/td[2]/table[2]/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/input"  desc="我的办税大厅-mainFrame-rightFrame-查找按钮">查找按钮</locator>
+	</page>
+
+	<page pagename="org.webdriver.patatiumwebui.pageObject.StampTaxXmTaxPage" value="" desc="厦门市网上税务局-印花税">
+		<locator type="xpath" timeout="0" value="//*[@id='table_content']" desc="table_content">table_content</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='table_right_content']" desc="table_right_content">table_right_content</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='skssqq']"  desc="我的办税大厅-iframe1-main-税款所属期">税款所属期</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='submitBtn']"  desc="我的办税大厅-iframe1-main-submitBtn">submitBtn</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm1']/table[2]/tbody/tr[3]/td/div/span/input[1]"  desc="我的办税大厅-iframe1-main-添加申报记录">添加申报记录</locator>
+		<locator type="xpath" timeout="0" value="//*[@id=&quot;sbbVo['zspmdm']&quot;]"  desc="我的办税大厅-iframe1-main-应征凭证名称">应征凭证名称</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm2']/table/tbody/tr[3]/td/table/tbody/tr[4]/td/div/input[1]"  desc="我的办税大厅-iframe1-main-添加申报记录下一步">添加申报记录下一步</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm3']/table/tbody/tr[3]/td/table[1]/tbody/tr[6]/td/table/tbody/tr[1]/td[3]/label/input"  desc="我的办税大厅-iframe1-main-计税金额或件数">计税金额或件数</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='ssjmxzdm']"  desc="我的办税大厅-iframe1-main-减免性质">减免性质</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm3']/table/tbody/tr[3]/td/table[1]/tbody/tr[8]/td/div/input[1]"  desc="我的办税大厅-iframe1-main-确认添加">确认添加</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='submitList']"  desc="我的办税大厅-iframe1-main-确认提交">确认提交</locator>
+	</page>
+
+	<page pagename="org.webdriver.patatiumwebui.pageObject.AdditionalTaxXmTaxPage" value="" desc="厦门市网上税务局-城建税及附加">
+		<locator type="xpath" timeout="0" value="//*[@id='skssqq']"  desc="我的办税大厅-iframe1-main-税款所属期">税款所属期</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='skssqz']"  desc="我的办税大厅-iframe1-main-税款所属期止">税款所属期止</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm']/table/tbody/tr[3]/td/table/tbody/tr[5]/td/font/span/input"  desc="我的办税大厅-iframe1-main-下一步">下一步</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm1']/table[2]/tbody/tr[3]/td/div/input"  desc="我的办税大厅-iframe1-main-添加申报记录">添加申报记录</locator>
+		<locator type="xpath" timeout="0" value="//*[@id=&quot;sbbVo['zsxmDm']&quot;]"  desc="我的办税大厅-iframe1-main-征收项目">征收项目</locator>
+		<locator type="xpath" timeout="0" value="//*[@id=&quot;sbbVo['zspmDm']&quot;]"  desc="我的办税大厅-iframe1-main-征收品目">征收品目</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='_combobox_']"  desc="我的办税大厅-iframe1-main-本月销售额合计数">本月销售额合计数</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm2']/table/tbody/tr[3]/td/table/tbody/tr[4]/td/div/input[1]"  desc="我的办税大厅-iframe1-main-添加城建税下一步">添加城建税下一步</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm3']/table/tbody/tr[3]/td/table[1]/tbody/tr[6]/td/table/tbody/tr[1]/td[3]/label/input"  desc="我的办税大厅-iframe1-main-增值税输入">增值税输入</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='myForm3']/table/tbody/tr[3]/td/table[1]/tbody/tr[6]/td/table/tbody/tr[2]/td[3]/label/input"  desc="我的办税大厅-iframe1-main-增值税免抵税额">增值税免抵税额</locator>
+
+
+		<locator type="xpath" timeout="0" value="//*[@id='submitList']"  desc="我的办税大厅-iframe1-main-确认提交">确认提交</locator>
+
+		<locator type="xpath" timeout="0" value="//*[@id='table_content']" desc="table_content">table_content</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='table_right_content']" desc="table_right_content">table_right_content</locator>
+	</page>
+
+	<page pagename="org.webdriver.patatiumwebui.pageObject.LocalFundsXmTaxPage" value="" desc="厦门市网上税务局-工会经费">
+		<locator type="xpath" timeout="0" value="//*[@id='table_content']" desc="table_content">table_content</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='table_right_content']" desc="table_right_content">table_right_content</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='nzgr']"  desc="我的办税大厅-iframe1-main-工会经费申报">工会经费申报</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='submitBtn']"  desc="我的办税大厅-iframe1-main-下一步">下一步</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='skssqq']"  desc="我的办税大厅-iframe1-main-税款所属期">税款所属期</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='addItem']"  desc="我的办税大厅-iframe1-main-添加申报记录">添加申报记录</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='next']"  desc="我的办税大厅-iframe1-main-下一步2">下一步2</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='ensure']"  desc="我的办税大厅-iframe1-main-确认提交">确认提交</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='ysx']"  desc="我的办税大厅-iframe1-main-应税项">应税项</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='addToList']"  desc="我的办税大厅-iframe1-main-确认添加">确认添加</locator>
+		<locator type="xpath" timeout="0" value="//*[@id='submitList']"  desc="我的办税大厅-iframe1-main-提交申请表">提交申请表</locator>
+	</page>
+</map>

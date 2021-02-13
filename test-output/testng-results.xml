@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15492" started-at="2018-11-16T07:51:55Z" finished-at="2018-11-16T07:52:10Z">
+    <groups>
+    </groups>
+    <test name="登录成功并进入渠道编辑的测试用例" duration-ms="15492" started-at="2018-11-16T07:51:55Z" finished-at="2018-11-16T07:52:10Z">
+      <class name="org.webdriver.patatiumwebui.Test.XmTaxTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.webdriver.patatiumwebui.Test.XmTaxTest@1a08f4c3]" name="setup" is-config="true" duration-ms="4702" started-at="2018-11-16T15:51:55Z" finished-at="2018-11-16T15:51:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="run()[pri:0, instance:org.webdriver.patatiumwebui.Test.XmTaxTest@1a08f4c3]" name="run" duration-ms="7840" started-at="2018-11-16T15:51:59Z" description="一键零申报" finished-at="2018-11-16T15:52:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.webdriver.patatiumwebui.Test.XmTaxTest@1a08f4c3]" name="tearDown" is-config="true" duration-ms="2861" started-at="2018-11-16T15:52:07Z" finished-at="2018-11-16T15:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.webdriver.patatiumwebui.Test.XmTaxTest -->
+    </test> <!-- 登录成功并进入渠道编辑的测试用例 -->
+  </suite> <!-- Suite -->
+</testng-results>

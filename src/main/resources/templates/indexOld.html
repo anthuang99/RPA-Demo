@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/default/easyui.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/icon.css}" />
+    <script type="text/javascript" th:src="@{/js/lib/v1.11.0-rc1-ext0.1/jquery.all.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/jquery-easyui-1.6.7/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/1.6.0-ext0.1/underscore.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/1.6.0-ext0.1/underscore-application-ext.js}"></script>
+    <script type="text/javascript" th:src="@{/js/indexOld.js}"></script>
+    <script type="text/javascript">
+        var contextPath='[[${#httpServletRequest.getContextPath()}]]';
+    </script>
+    <style type="text/css">
+        table,table th, table td{
+            border-collapse: collapse;
+        }
+        .taxDeclareCls th, .taxDeclareCls td, .breakAll {
+            word-break:break-all;
+            word-wrap:break-word;
+            padding-left: 2px;
+            padding-right:2px;
+        }
+        .fb {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<!--
+<div>
+    <ul>
+        <li  th:each="user:${users}">
+            <span th:text="${user.id}"></span>-
+            <span th:text="${user.name}"></span>-
+            <span th:text="${user.age}"></span>-
+            <span th:text="${user.address}"></span>
+        </li>
+    </ul>
+</div>
+-->
+<script id="corpSettingBodyTemplate" type="text/template">
+    [% if (corpSetting) { %]
+    <tr>
+        <td>[%=corpSetting.username%]</td>
+        <td>[%=corpSetting.domainName%]</td>
+        <td>[%=corpSetting.modifyTimeShow%]</td>
+        <td>
+            <input type="button" value="修改" onclick="showCorpSettingDialog()" />
+            <input type="button" value="账益达接口测试" onclick="pingZhangYiDaRequest()" />
+            <input type="button" value="启动浏览器测试" onclick="pingSelenium()" />
+            <input type="button" value="验证码测试" onclick="pingCheckcode()" />
+        </td>
+    </tr>
+    [% } else { %]
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="button" value="新增" onclick="showCorpSettingDialog()" />
+            <input type="button" value="账益达接口测试" onclick="pingZhangYiDaRequest()" />
+            <input type="button" value="启动浏览器测试" onclick="pingSelenium()" />
+            <input type="button" value="验证码测试" onclick="pingCheckcode()" />
+        </td>
+    </tr>
+    [% } %]
+</script>
+
+<script id="taxParameterBodyTemplate" type="text/template">
+    [% if (taxParameterLi && taxParameterLi.length > 0) { %]
+        [% for (var i = 0; i < taxParameterLi.length; i++) { %]
+            [% if (taxParameterLi[i].key == 'taxDeclareStatus') { %]
+            <tr>
+                <td>
+                    一键报税状态
+                </td>
+                <td>
+                    [% if (taxParameterLi[i].value == '0') { %]
+                    未启动
+                    [% } else if (taxParameterLi[i].value == '1') { %]
+                    已启动
+                    [% } %]
+                </td>
+                <td>[%=taxParameterLi[i].modifyTimeShow%]</td>
+                <td>
+                    [% if (taxParameterLi[i].value == '0') { %]
+                    <input type="button" value="启动" onclick="startTaxDeclareStatus()" />
+                    [% } else if (taxParameterLi[i].value == '1') { %]
+                    <input type="button" value="暂停" onclick="stopTaxDeclareStatus()" />
+                    [% } %]
+                </td>
+            </tr>
+            [% } %]
+            [% if (taxParameterLi[i].key == 'taxThreadCount') { %]
+            <tr>
+                <td>
+                    并行报税用户数
+                </td>
+                <td>
+                    [%= taxParameterLi[i].value %]
+                </td>
+                <td>[%=taxParameterLi[i].modifyTimeShow%]</td>
+                <td>
+                    <input type="button" value="修改" onclick="showTaxThreadCountDialog()" />
+                </td>
+            </tr>
+            [% } %]
+            [% if (taxParameterLi[i].key == 'checkcodeOffsetX') { %]
+            <tr>
+                <td>
+                    验证码X偏移
+                </td>
+                <td>
+                    [%= taxParameterLi[i].value %]
+                </td>
+                <td>[%=taxParameterLi[i].modifyTimeShow%]</td>
+                <td>
+                    <input type="button" value="修改" onclick="showCheckcodeOffsetXDialog()" />
+                </td>
+            </tr>
+            [% } %]
+            [% if (taxParameterLi[i].key == 'checkcodeOffsetY') { %]
+            <tr>
+                <td>
+                    验证码Y偏移
+                </td>
+                <td>
+                    [%= taxParameterLi[i].value %]
+                </td>
+                <td>[%=taxParameterLi[i].modifyTimeShow%]</td>
+                <td>
+                    <input type="button" value="修改" onclick="showCheckcodeOffsetYDialog()" />
+                </td>
+            </tr>
+            [% } %]
+            [% if (taxParameterLi[i].key == 'browserPath') { %]
+            <tr>
+                <td>
+                    浏览器路径
+                    <!--注册表路径:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths-->
+                </td>
+                <td class="breakAll">
+                    [%= taxParameterLi[i].value %]
+                </td>
+                <td>[%=taxParameterLi[i].modifyTimeShow%]</td>
+                <td class="breakAll">
+                    <input type="button" value="修改" onclick="showBrowserPathDialog()" />
+                </td>
+            </tr>
+            [% } %]
+            [% if (taxParameterLi[i].key == 'browserPathType') { %]
+            <tr>
+                <td>
+                    浏览器路径类型
+                </td>
+                <td class="breakAll">
+                    [% if (taxParameterLi[i].value == '0') { %]
+                        系统设置
+                    [% } else { %]
+                        手工设置
+                    [% } %]
+                </td>
+                <td>[%=taxParameterLi[i].modifyTimeShow%]</td>
+                <td class="breakAll">
+                </td>
+            </tr>
+            [% } %]
+        [% } %]
+    [% } else { %]
+        <tr>
+            <td colspan="4">
+                无记录
+            </td>
+        </tr>
+    [% } %]
+</script>
+
+<script id="taxDeclareProgressBodyTemplate" type="text/template">
+    [% if (taxDeclareProgressLi && taxDeclareProgressLi.length > 0) { %]
+        [% for (var i = 0; i < taxDeclareProgressLi.length; i++) { %]
+        <tr>
+            <td>[%= taxDeclareProgressLi[i].startTimeShow %]</td>
+            <td>[%= taxDeclareProgressLi[i].userTotalCount %]</td>
+            <td>[%= taxDeclareProgressLi[i].userFinishCount %]</td>
+            <td>[%= taxDeclareProgressLi[i].userFinishSuccessCount %]</td>
+            <td>[%= taxDeclareProgressLi[i].userFinishCount - taxDeclareProgressLi[i].userFinishSuccessCount %]</td>
+            <td class="breakAll">[%= taxDeclareProgressLi[i].currentUser %]</td>
+            <td class="breakAll">[%= taxDeclareProgressLi[i].currentTaxTimeShow %]</td>
+            <td>[%= taxDeclareProgressLi[i].timeSpendMinute %]</td>
+            <td class="breakAll">[%= taxDeclareProgressLi[i].createTimeShow %]</td>
+        </tr>
+        [% } %]
+    [% } else { %]
+    <tr>
+        <td colspan="9">无数据</td>
+    </tr>
+    [% } %]
+</script>
+
+<script id="corpSettingDialogTemplate" type="text/template">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="text-align: right">用户名：</td>
+            <td>
+                <input type="text" name="username" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right">密码：</td>
+            <td>
+                <input type="password" name="password" />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right">域名：</td>
+            <td>
+                <input type="domainName" name="domainName" />
+            </td>
+        </tr>
+    </table>
+</script>
+
+<script id="taxThreadCountDialogTemplate" type="text/template">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="text-align: right">并行报税用户数：</td>
+            <td>
+                <input type="text" name="taxThreadCount" />
+            </td>
+        </tr>
+    </table>
+</script>
+
+<script id="checkcodeOffsetXDialogTemplate" type="text/template">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="text-align: right">验证码X偏移：</td>
+            <td>
+                <input type="text" name="checkcodeOffsetX" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">(左空白增,右空白减)</td>
+        </tr>
+    </table>
+</script>
+
+<script id="checkcodeOffsetYDialogTemplate" type="text/template">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="text-align: right">验证码Y偏移：</td>
+            <td>
+                <input type="text" name="checkcodeOffsetY" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">(上空白增,下空白减)</td>
+        </tr>
+    </table>
+</script>
+
+<script id="browserPathDialogTemplate" type="text/template">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="text-align: right">浏览器路径：</td>
+            <td>
+                <input type="text" name="browserPath" />
+            </td>
+        </tr>
+    </table>
+</script>
+
+<div>
+    <div class="fb" style="margin-top: 20px;">登陆信息</div><!-- 80% -->
+    <table cellspacing="0" cellpadding="0" border="1" width="80%" style="table-layout: fixed;">
+        <thead>
+            <tr style="text-align: center">
+                <td width="180px;">用户名</td>
+                <td width="220px;">域名</td>
+                <td width="180px;">修改时间</td>
+                <td width="">操作</td>
+            </tr>
+        </thead>
+        <tbody id="corpSettingBody">
+
+        </tbody>
+    </table>
+</div>
+
+<div style="margin-top: 20px;">
+    <div class="fb">参数设置</div>
+    <table cellspacing="0" cellpadding="0" border="1" width="80%" style="table-layout: fixed;">
+        <thead>
+            <tr style="text-align: center">
+                <td width="180px;">参数名称</td>
+                <td width="220px;">参数值</td>
+                <td width="180px;">修改时间</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody id="taxParameterBody">
+
+        </tbody>
+    </table>
+</div>
+
+<div style="margin-top: 20px;">
+    <div>
+        <span class="fb">报税进度</span>
+        <span style="margin-left: 20px;">
+            <a href="javascript:refreshTaxDeclareProgress()">刷新</a>
+        </span>
+        <span style="margin-left: 10px;">
+            <a th:href="@{/taxDeclareDetail/gotoTaxDeclareDetail.htm}" target="_blank">查看详情</a>
+        </span>
+    </div>
+    <table cellspacing="0" cellpadding="0" border="1" width="80%" class="taxDeclareCls" style="table-layout: fixed;">
+        <thead>
+            <tr style="text-align: center">
+                <td>报税启动时间</td>
+                <td>报税总企业数</td>
+                <td>已报完成数</td>
+                <td style="white-space: nowrap;">已报成功数</td>
+                <td style="white-space: nowrap;">已报失败数</td>
+                <td>当前报税人</td>
+                <td>当前报税时间</td>
+                <td>已耗时(分钟)</td>
+                <td>创建时间</td>
+            </tr>
+        </thead>
+        <tbody id="taxDeclareProgressBody">
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

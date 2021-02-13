@@ -1,0 +1,791 @@
+package org.webdriver.patatiumwebui.action;
+
+import org.apache.commons.lang3.StringUtils;
+import org.webdriver.patatiumwebui.action.vo.TaxVo;
+import org.webdriver.patatiumwebui.constant.TaxConstant;
+import org.webdriver.patatiumwebui.exception.RPAException;
+import org.webdriver.patatiumwebui.pageObject.IndexXmTaxPage;
+import org.webdriver.patatiumwebui.utils.ElementAction;
+import org.webdriver.patatiumwebui.utils.Log;
+import org.webdriver.patatiumwebui.utils.TaxUtil;
+import org.webdriver.patatiumwebui.utils.TestBaseCase;
+import org.webdriver.patatiumwebui.web.model.TaxExpireDateSetting;
+import org.webdriver.patatiumwebui.web.service.TaxExpireDateSettingService;
+import org.webdriver.patatiumwebui.web.util.DateUtil;
+import org.webdriver.patatiumwebui.web.util.SpringUtil;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * 厦门税务首页
+ */
+public class IndexXmTaxAction extends TestBaseCase {
+    private Log log = new Log(this.getClass());
+    private boolean isReportStamp = false;// 是否已经申报过印花税,
+    private boolean isReportLocalFunds = false;// 是否已经申报过工会经费,
+    private String stampTaxBelongItem = null;// 印花税征收品目
+
+    /**
+     * 切换窗口
+     */
+    private void switchToMainWindow() {
+        TaxUtil.switchToMainWindow();
+    }
+
+    /*
+     * 从待办事项的列表上查找需要报税的文字,在一个表格的表身里面,
+     * 全部的值可能为:
+     * ===================================
+     * 其他收入  印花税  地方教育附加  城市维护建设税  教育费附加  残疾人就业保障金  增值税  个人所得税  社保费  企业所得税
+     * ===================================
+     * 取得未报税的值,并进行分发,
+     */
+    public void applyTaxNeedToReport(String userName) throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        switchToMainWindow();
+        action.sleep(1);
+
+        if (TaxUtil.isIEBrowser()) {
+            // IE 浏览器,有时候会出现直接跳转到首页的情况,原因未明,因此,在这里做了一个特殊的判断,修改页面 url 进行跳转,
+            Object obj = action.executeJS("return location.href");
+            if (obj.toString().indexOf("tnsfwHome/index.do") == -1) {
+                action.executeJS("location.href='/tnsfwHome/index.do'");
+                action.sleep(1);
+            }
+        }
+
+        isReportStampTax();// 查询是否申报过印花税,工会经费
+        if (!isReportStamp) {
+            stampTaxBelongItem = getStampTaxBelongItem();
+        }
+        switchToMainWindow();
+
+        // 添加纳税申报日期配置表相关数据,有可能会切换窗口
+        saveTaxExpireDateSettingIfNotExistNewUI();
+
+        switchToMainWindow();
+        // 需要重新切回到顶部 frame, 再往下查找,否则查找不到元素,
+        {// 新 UI 的内容
+            action.switchToDefaultFrame();
+//            $("#undertable").html()
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+//            List<String> wsbLi = new ArrayList<>();// 未申报的税种列表,
+
+            // 取得未报税的数据列表,用正则表达式来取得未报税的税种
+            action.findElement(indexXmTaxPage.我的待办表身内容());
+
+            Object obj = action.executeJS("return $('#undertable').html()");
+            List<String> wsbLi = getWsbTaxLi(obj);
+            if (wsbLi.size() > 0) {// 进入税费申报及缴纳页面
+                action.switchToDefaultFrame();
+
+                // 定位 table_content,
+                action.switchToFrame(indexXmTaxPage.table_content());
+
+                // 定位 table_right_content,
+                action.switchToFrame(indexXmTaxPage.table_right_content());
+
+                action.executeJS("$('#bszx').mouseover()");
+
+//                action.click(indexXmTaxPage.办税中心_税费申报及缴纳());
+                /*
+                 <td onclick="window.parent.showContent('bszx_03','bszx','/tnsfwHome/index.do?menuid=bszx_03&menu_item_id=bszx_03','1','N','')"></td>
+                 当出现这种 onclick 在 td 上的元素时, IE 下不能触发,只能直接执行 js 脚本,
+                  */
+                action.executeJS("window.parent.showContent('bszx_03','bszx','/tnsfwHome/index.do?menuid=bszx_03&menu_item_id=bszx_03','1','N','')");
+                action.pagefoload(10);
+            }
+            List<String> failTaxLi = new ArrayList<>();
+            // 地方教育附加,城市维护建设税,教育费附加,三者一体,只要运行一个即可,
+            boolean hasRunAdditionalTax = false;
+            for (String item: wsbLi) {
+                //                        其他收入  印花税  地方教育附加  城市维护建设税  教育费附加  残疾人就业保障金  增值税  个人所得税  社保费  企业所得税
+                if (item.equals(TaxConstant.XM_QTSL_ZH_CN)) {// 其他收入
+                    if (!applyLocalFunds(userName)) {
+                        failTaxLi.add(item);
+                    }
+                } else if (item.equals(TaxConstant.XM_YHS_ZH_CN)) {// 印花税
+                    if (!applyStampTax(userName)) {
+                        failTaxLi.add(item);
+                    }
+                } else if (item.equals(TaxConstant.XM_DFJYFJ_ZH_CN)) {// 地方教育附加
+                    if (!hasRunAdditionalTax) {
+                        if (!applyAdditionalTax(userName)) {
+                            failTaxLi.add(item);
+                        }
+                        hasRunAdditionalTax = true;
+                    }
+                } else if (item.equals(TaxConstant.XM_CSWHJSS_ZH_CN)) {// 城市维护建设税
+                    if (!hasRunAdditionalTax) {
+                        if (!applyAdditionalTax(userName)) {
+                            failTaxLi.add(item);
+                        }
+                        hasRunAdditionalTax = true;
+                    }
+                } else if (item.equals(TaxConstant.XM_JYFFJ_ZH_CN)) {// 教育费附加
+                    if (!hasRunAdditionalTax) {
+                        if (!applyAdditionalTax(userName)) {
+                            failTaxLi.add(item);
+                        }
+                        hasRunAdditionalTax = true;
+                    }
+                } else if (item.equals(TaxConstant.XM_CJRJYBZJ_ZH_CN)) {// 残疾人就业保障金
+                    // do nothing
+                } else if (item.equals(TaxConstant.XM_ZZS_ZH_CN)) {// 增值税
+                    if (!applyAddedValueTax(userName)) {
+                        failTaxLi.add(item);
+                    }
+                } else if (item.equals(TaxConstant.XM_GRSDS_ZH_CN)) {// 个人所得税
+                    // do nothing
+                } else if (item.equals(TaxConstant.XM_SBF_ZH_CN)) {// 社保费
+                    // do nothing
+                } else if (item.equals(TaxConstant.XM_QYSDS_ZH_CN)) {// 企业所得税
+                    // do nothing
+                }
+            }
+            if (failTaxLi.size() > 0) {
+                String[] array = failTaxLi.toArray(new String[failTaxLi.size()]);
+                throw new RPAException("这些税种报税失败:" + StringUtils.join(array, ","));
+            }
+        }
+    }
+
+    /**
+     * 是否申报过印花税,工会经费,
+     * 从左侧的菜单,申报信息查询,查询是否已经申报了 印花税,工会经费
+     * 用直接执行 js 的方式
+ function tmpOnlyou(code) {
+     var stampResult = '';
+     var url = '/cxzx/sbxxcx/query?query.sbsjq={申报时间起}&query.sbsjz={申报时间止}&query.skssqrqq={税款所属期起}&query.skssqrqz=&limit=10&offset=0&order=asc&query.zsxm={征收项目}&where=undefined';
+     url = url.replace('{申报时间起}', '2018-11-01');
+     url = url.replace('{申报时间止}', '2019-01-01');
+     url = url.replace('{税款所属期起}', '2018-11-01');
+     url = url.replace('{征收项目}', code);
+     $.ajax({
+     async: false,
+     url: url,
+     success: function(response) {
+     stampResult = response;
+     }
+     });
+     if (stampResult) {
+     return stampResult.total;
+     }
+     return stampResult;
+ }
+     * @return
+     */
+    private void isReportStampTax() throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        switchToMainWindow();
+
+        action.switchToDefaultFrame();
+        {
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+            action.executeJS("$('#cxzx_17').click()");// 点击左侧的 申报信息查询
+            action.sleep(1);
+            action.pagefoload(10);
+        }
+        action.switchToDefaultFrame();
+        {
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+//            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+            // 定位 table_right_content2,
+            action.switchToFrame(indexXmTaxPage.table_right_content2());
+
+            String preMonthFirstDate = DateUtil.getPreMonthFirstDate("yyyy-MM-dd");
+            String nextMonthFirstDate = DateUtil.getNextMonthFirstDate("yyyy-MM-dd");
+
+            {
+                action.sleep(3);
+                action.executeJS("document.getElementById('query.sbsjq').value = '{date}'".replace("{date}", preMonthFirstDate));
+                action.executeJS("document.getElementById('query.sbsjz').value = '{date}'".replace("{date}", nextMonthFirstDate));
+                action.executeJS("document.getElementById('query.skssqrqq').value = '{date}'".replace("{date}", preMonthFirstDate));
+                action.executeJS("document.getElementById('query.zsxm').value = '10111'");// 印花税
+                action.executeJS("$('#btn_query').click()");
+
+                action.sleep(3);
+                Object result = action.executeJS("return $('#TableList').html()");
+                if (!(result.toString().indexOf("没有找到匹配的记录") > -1)) {
+                    isReportStamp = true;
+                }
+            }
+            {
+                action.executeJS("document.getElementById('query.sbsjq').value = '{date}'".replace("{date}", preMonthFirstDate));
+                action.executeJS("document.getElementById('query.sbsjz').value = '{date}'".replace("{date}", nextMonthFirstDate));
+                action.executeJS("document.getElementById('query.skssqrqq').value = '{date}'".replace("{date}", preMonthFirstDate));
+                action.executeJS("document.getElementById('query.zsxm').value = '39900'");// 工会经费
+                action.executeJS("$('#btn_query').click()");
+
+                action.sleep(3);
+                Object result = action.executeJS("return $('#TableList').html()");
+                if (!(result.toString().indexOf("没有找到匹配的记录") > -1)) {
+                    isReportLocalFunds = true;
+                }
+            }
+        }
+        action.switchToDefaultFrame();
+        action.executeJS("location.reload()");
+        action.sleep(1);
+        action.pagefoload(10);
+    }
+
+    /**
+     * 从首页->我的信息->纳税人信息->纳税人税（费）种认定信息
+     * 查询征收项目为"印花税"的项目,取得征收品目,
+     * 在印花税申报过程中,进行填值,
+     * @return
+     * @throws IOException
+     */
+    private String getStampTaxBelongItem() throws IOException {
+        String stampTaxItem = null;
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        switchToMainWindow();
+
+        action.switchToDefaultFrame();
+        {
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+            action.click(indexXmTaxPage.纳税人信息表格());
+            action.sleep(1);
+            action.pagefoload(10);
+        }
+        action.switchToDefaultFrame();
+        {
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 点击纳税人税费种认定信息
+            action.click(indexXmTaxPage.纳税人税费种认定信息());
+            action.sleep(1);
+            action.pagefoload(10);
+        }
+        action.switchToDefaultFrame();
+        {
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+             //定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+            // 搜索印花税,
+            Object obj = action.executeJS("return $('.searchResult2').html()");
+            stampTaxItem = getStampTaxItem(obj);
+        }
+        action.switchToDefaultFrame();
+        action.executeJS("location.reload()");
+        action.sleep(1);
+        action.pagefoload(10);
+        return stampTaxItem;
+    }
+
+    /**
+     * 取得印花税征收品目,
+     * 页面 html 长这样:
+<td>
+印花税</td>
+<td>
+其他凭证</td>
+<td>&nbsp;</td>
+<td>
+2018-08-01</td>
+<td>
+9999-12-31</td>
+     * @param obj
+     * @return
+     */
+    private String getStampTaxItem(Object obj) {
+        if (obj != null) {
+            Calendar calendar = Calendar.getInstance();
+            int currentYear = calendar.get(Calendar.YEAR);
+            int currentMonth = calendar.get(Calendar.MONTH) + 1;
+            int currentDate = calendar.get(Calendar.DATE);
+            String text = obj.toString();
+            Pattern trPattern = Pattern.compile("(?msi)<tr[^>]*?>(.*?)</tr>");
+            Matcher trMatcher = trPattern.matcher(text);
+            while (trMatcher.find()) {
+                String trLine = trMatcher.group(1);
+                Pattern tdPattern = Pattern.compile("(?msi)<td[^>]*?>(.*?)</td>.*?<td[^>]*?>(.*?)</td>.*?<td[^>]*?>(.*?)</td>.*?<td[^>]*?>(.*?)</td>.*?<td[^>]*?>(.*?)</td>");
+                Matcher tdMatcher = tdPattern.matcher(trLine);
+                if (tdMatcher.find()) {
+                    String tdItem1 = tdMatcher.group(1).trim().replaceAll("\\s+", "");
+                    String tdItem2 = tdMatcher.group(2).trim().replaceAll("\\s+", "");
+                    String tdItem3 = tdMatcher.group(3).trim().replaceAll("\\s+", "");
+                    String tdItem4 = tdMatcher.group(4).trim().replaceAll("\\s+", "");
+                    String tdItem5 = tdMatcher.group(5).trim().replaceAll("\\s+", "");
+                    if (tdItem1.equals("印花税")) {
+                        String[] beginYmd = tdItem4.split("-");
+                        int beginYear = Integer.valueOf(beginYmd[0]);
+                        int beginMonth = Integer.valueOf(beginYmd[1]);
+                        int beginDate = Integer.valueOf(beginYmd[2]);
+                        boolean isCurrentDateGTEBegin = false;
+                        isCurrentDateGTEBegin = isCurrentDateGTEBegin || (currentYear > beginYear);
+                        isCurrentDateGTEBegin = isCurrentDateGTEBegin || ((currentYear == beginYear) && (currentMonth > beginMonth));
+                        isCurrentDateGTEBegin = isCurrentDateGTEBegin || ((currentYear == beginYear) && (currentMonth == beginMonth) && (currentDate >= beginDate));
+
+                        String[] endYmd = tdItem5.split("-");
+                        int endYear = Integer.valueOf(endYmd[0]);
+                        int endMonth = Integer.valueOf(endYmd[1]);
+                        int endDate = Integer.valueOf(endYmd[2]);
+                        boolean isEndGTECurrent = false;
+                        isEndGTECurrent = isEndGTECurrent || (endYear > currentYear);
+                        isEndGTECurrent = isEndGTECurrent || ((endYear == currentYear) && (endMonth > currentMonth));
+                        isEndGTECurrent = isEndGTECurrent || ((endYear == currentYear) && (endMonth == currentMonth) && (endDate >= currentDate));
+
+                        if (isCurrentDateGTEBegin && isEndGTECurrent) {
+                            return tdItem2;
+                        }
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    private void notUse() {
+        /*
+        StringBuilder sb = new StringBuilder();
+        sb.append("function tmpOnlyou(code) {\n");
+        sb.append("    if (!$('#hiddenResult').get(0)) {\n");
+        sb.append("        $(document.body).append(\"<input type='hidden' id='hiddenResult' value='' />\");\n");
+        sb.append("    }\n");
+        sb.append("    $('#hiddenResult').val('');\n");
+        sb.append("    var stampResult = '';\n");
+        sb.append("    var url = '/cxzx/sbxxcx/query?query.sbsjq={申报时间起}&query.sbsjz={申报时间止}&query.skssqrqq={税款所属期起}&query.skssqrqz=&limit=10&offset=0&order=asc&query.zsxm={征收项目}&where=undefined';\n");
+        sb.append("    url = url.replace('{征收项目}', code);\n");
+        sb.append("    $.ajax({\n");
+        sb.append("        async: false,\n");
+        sb.append("        url: url,\n");
+        sb.append("        success: function(response) {\n");
+        sb.append("            stampResult = response;\n");
+        sb.append("        }\n");
+        sb.append("    });\n");
+        sb.append("    if (stampResult) {\n");
+        sb.append("        $('#hiddenResult').val(stampResult.total);\n");
+        sb.append("    }\n");
+        sb.append("}\n");
+
+        String ajaxTemplate = sb.toString();
+        ajaxTemplate = ajaxTemplate.replaceAll("\\{申报时间起}", preMonthFirstDate);
+        ajaxTemplate = ajaxTemplate.replaceAll("\\{申报时间止}", nextMonthFirstDate);
+        ajaxTemplate = ajaxTemplate.replaceAll("\\{税款所属期起}", preMonthFirstDate);
+//            action.executeJS(ajaxTemplate);
+        action.executeJS(ajaxTemplate + "\ntmpOnlyou('10111')");// 印花税
+        Object stampObj = action.executeJS("return $('#hiddenResult').val()");
+        if (StringUtils.isNotEmpty(stampObj.toString())) {
+            if (Integer.valueOf(stampObj.toString()) > 0) {
+                isReportStamp = true;
+            }
+        }
+        action.executeJS(ajaxTemplate + "\ntmpOnlyou('39900')");// 其它收入(工会经费)
+        Object localFundsObj = action.executeJS("return $('#hiddenResult').val()");
+        if (StringUtils.isNotEmpty(localFundsObj.toString())) {
+            if (Integer.valueOf(localFundsObj.toString()) > 0) {
+                isReportLocalFunds = true;
+            }
+        }
+        action.executeJS("location.reload()");
+        action.sleep(1);
+        action.pagefoload(10);
+        */
+    }
+
+    /**
+     * 取得未申报的税种
+     * <tbody><tr class="oddLineCss" style="color: #666666;"><td style="width: 40%;padding-left: 40px;">事项名称</td><td style="width: 20%;">截止日期</td><td style="width: 20%;">状态</td><td>操作</td></tr><tr><td class="bg_one" style="width: 40%;padding-left: 40px;">增值税</td><td style="width: 20%;">2018-11-15</td><td style="width: 20%;color: red;">未申报</td><td><div class="blButton" onclick="showContent('http://wssb.xm-n-tax.gov.cn:7001/wssb/wssb/public/jsp/wssb.jsp','2','');">办理</div></td></tr><tr class="oddLineCss"><td class="bg_one" style="width: 40%;padding-left: 40px;">企业所得税</td><td style="width: 20%;">2018-10-24</td><td style="width: 20%;color: red;">未申报</td><td><div class="blButton" onclick="showContent('https://wsbsfwt2.xmtax.gov.cn/tnsfwHome/index.do?menuid=bszx_03&amp;menu_item_id=bszx_0303','1','qysds');">办理</div></td></tr><tr><td class="bg_one" style="width: 40%;padding-left: 40px;">增值税</td><td style="width: 20%;">2018-09-30</td><td style="width: 20%;color: red;">逾期未申报</td><td><div class="blButton" onclick="showContent('http://wssb.xm-n-tax.gov.cn:7001/wssb/wssb/public/jsp/wssb.jsp','2','');">办理</div></td></tr><tr class="oddLineCss"><td class="bg_one" style="width: 40%;padding-left: 40px;">企业所得税</td><td style="width: 20%;">2018-09-30</td><td style="width: 20%;color: red;">逾期未申报</td><td><div class="blButton" onclick="showContent('https://wsbsfwt2.xmtax.gov.cn/tnsfwHome/index.do?menuid=bszx_03&amp;menu_item_id=bszx_0303','1','qysds');">办理</div></td></tr></tbody>
+     */
+    private List<String> getWsbTaxLi(Object obj) {
+        List<String> result = new ArrayList<>();
+        if (obj != null) {
+            String text = obj.toString();
+            Pattern trPattern = Pattern.compile("<tr.*?>(.*?)</tr>");
+            Matcher trMatcher = trPattern.matcher(text);
+            if (trMatcher.find()) {// 需要跳过第一个 tr,第一个 tr 是表格头,
+                while (trMatcher.find()) {
+                    String trItem = trMatcher.group(1);
+                    Pattern tdPattern = Pattern.compile("<td.*?>(.*?)</td>");
+                    Matcher tdMatcher = tdPattern.matcher(trItem);
+                    String taxName = null;
+                    String taxDate = null;
+                    String reportName = null;
+                    if (tdMatcher.find()) {
+                        taxName = tdMatcher.group(1);
+                    }
+                    if (tdMatcher.find()) {
+                        taxDate = tdMatcher.group(1);
+                    }
+                    if (tdMatcher.find()) {
+                        reportName = tdMatcher.group(1);
+                    }
+                    if (StringUtils.isNotEmpty(taxName) && StringUtils.isNotEmpty(taxDate) && StringUtils.isNotEmpty(reportName)) {
+                        Pattern pattern = Pattern.compile("\\d{4}-\\d{1,2}-\\d{1,2}");
+                        Matcher matcher = pattern.matcher(taxDate);
+                        if (matcher.find()) {
+                            String yyyyMMdd = matcher.group(0);
+                            String[] array = yyyyMMdd.split("-");
+                            String yearString = array[0];
+                            String monthString = array[1];
+                            if (monthString.startsWith("0")) {
+                                monthString = monthString.substring(1);
+                            }
+                            Calendar calendar = Calendar.getInstance();
+                            int year = calendar.get(Calendar.YEAR);
+                            int month = calendar.get(Calendar.MONTH) + 1;
+                            if ((year == Integer.valueOf(yearString))
+                                    && (month == Integer.valueOf(monthString))
+                                    && (reportName.equals("未申报"))
+                                    ) {
+                                result.add(taxName);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if (!isReportStamp) {
+            result.add(TaxConstant.XM_YHS_ZH_CN);
+        }
+        if (!isReportLocalFunds) {
+            result.add(TaxConstant.XM_QTSL_ZH_CN);
+        }
+        return result;
+    }
+
+    /**
+     * 添加纳税申报日期配置表相关数据,
+     * 当 纳税申报日期配置表 没有本月数据时,查询首页右侧的日期框,
+     * 读取报税日期并保存
+     */
+    private void saveTaxExpireDateSettingIfNotExistNewUI() throws IOException {
+        TaxExpireDateSettingService taxExpireDateSettingService = (TaxExpireDateSettingService) SpringUtil.getBean("taxExpireDateSettingService");
+        Calendar calendar = Calendar.getInstance();
+        String year = String.valueOf(calendar.get(Calendar.YEAR));
+        String month = String.valueOf(calendar.get(Calendar.MONTH) + 1);
+        TaxExpireDateSetting taxExpireDateSetting = taxExpireDateSettingService.getTaxExpireDateSetting(year, month);
+        if (taxExpireDateSetting == null) {
+            IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+            // 公众服务->办税日历里面了,
+            // top  ->  iframe#table_content    ->  iframe#table_right_content  ->  /html/body/div/div/div[1]/div/div/div[5]/div/div[2]/ul/li[9]
+            // $("#gzfw").mouseover()
+            // 点击后,打开办税日历窗口,
+            ElementAction action = new ElementAction();
+            {
+
+                // 需要重新切回到顶部 frame, 再往下查找,否则查找不到元素,
+                action.switchToDefaultFrame();
+
+                // 定位 table_content,
+                action.switchToFrame(indexXmTaxPage.table_content());
+
+                // 定位 table_right_content,
+                action.switchToFrame(indexXmTaxPage.table_right_content());
+
+                // 激活公众服务标签页,
+                action.executeJS("$('#gzfw').mouseover()");
+
+                // 点击办税日历
+//                action.click(indexXmTaxPage.办税日历());
+                action.executeJS("window.parent.showContent('zxfd_09','zxfd','http://www.xmtax.gov.cn/xmswcms/rili/bainianli_1.htm','2','Y','')");
+                action.sleep(1);
+            }
+            {
+                // 切换到办税日历窗口
+                action.switchToWindowByTitle("办税日历");
+
+                // 获取本月纳税申报截止日期
+                String text = action.getText(indexXmTaxPage.本月纳税申报截止日期());
+                Pattern pattern = Pattern.compile("\\d{4}-\\d{1,2}-\\d{1,2}");
+                Matcher matcher = pattern.matcher(text);
+                if (matcher.find()) {
+                    String yyyyMMdd = matcher.group(0);
+                    String[] array = yyyyMMdd.split("-");
+                    String yearString = array[0];
+                    String monthString = array[1];
+                    if (monthString.startsWith("0")) {
+                        monthString = monthString.substring(1);
+                    }
+                    String date = array[2];
+                    if (date.startsWith("0")) {
+                        date = date.substring(1);
+                    }
+                    taxExpireDateSettingService.saveTaxExpireDateSetting(yearString, monthString, date);
+                }
+            }
+        }
+    }
+
+    /**
+     * 回写已申报税种
+     */
+    /*private void writeBackYsbTaxName(String userName, String ysbText) {
+        Map<String, String> taxMap = new HashMap<>();
+        taxMap.put(TaxConstant.XM_YHS_ZH_CN, TaxConstant.XM_YHS);
+        taxMap.put(TaxConstant.XM_ZZS_ZH_CN, TaxConstant.XM_ZZS);
+
+        taxMap.put(TaxConstant.XM_QTSL_ZH_CN, TaxConstant.XM_QTSL);
+        taxMap.put(TaxConstant.XM_DFJYFJ_ZH_CN, TaxConstant.XM_DFJYFJ);
+        taxMap.put(TaxConstant.XM_CSWHJSS_ZH_CN, TaxConstant.XM_CSWHJSS);
+        taxMap.put(TaxConstant.XM_JYFFJ_ZH_CN, TaxConstant.XM_JYFFJ);
+        taxMap.put(TaxConstant.XM_CJRJYBZJ_ZH_CN, TaxConstant.XM_CJRJYBZJ);
+        taxMap.put(TaxConstant.XM_GRSDS_ZH_CN, TaxConstant.XM_GRSDS);
+        taxMap.put(TaxConstant.XM_SBF_ZH_CN, TaxConstant.XM_SBF);
+        taxMap.put(TaxConstant.XM_QYSDS_ZH_CN, TaxConstant.XM_QYSDS);
+
+        // 从 TaxExpireDateSetting 中读取最近一条,
+        ZhangYiDaRequest zhangYiDaRequest = new ZhangYiDaRequest();
+        if (StringUtils.isNotBlank(ysbText)) {
+            Calendar calendar = Calendar.getInstance();
+            // 前一个月第一天
+            calendar.add(Calendar.MONTH, -1);
+            calendar.set(Calendar.DATE, 1);
+
+            String belongDateBegin = DateUtil.getDateShow(calendar.getTime(), "yyyyMMdd");
+
+            // 前一个月最后一天=后一个月第一天,的前一天
+            calendar.add(Calendar.MONTH, 1);
+            calendar.set(Calendar.DATE, 1);
+            calendar.add(Calendar.DATE, -1);
+            String belongDateEnd = DateUtil.getDateShow(calendar.getTime(), "yyyyMMdd");
+            for (String item : ysbText.split(" +")) {
+                if (StringUtils.isNotEmpty(item)) {
+                    TaxExpireDateSettingService taxExpireDateSettingService = (TaxExpireDateSettingService) SpringUtil.getBean("taxExpireDateSettingService");
+                    String taxEndDate = taxExpireDateSettingService.getTaxEndDateString();
+
+                    WriteBackTaxResultVO writeBackTaxResultVO = new WriteBackTaxResultVO();
+                    writeBackTaxResultVO.setNationaltaxLoginname(userName);
+                    writeBackTaxResultVO.setTaxName(ObjectUtils.toString(taxMap.get(item), ""));
+                    writeBackTaxResultVO.setScreenBase64("");
+                    writeBackTaxResultVO.setBelongDateBegin(belongDateBegin);
+                    writeBackTaxResultVO.setBelongDateEnd(belongDateEnd);
+                    writeBackTaxResultVO.setTaxEndDate(taxEndDate);
+                    writeBackTaxResultVO.setSuccess(true);
+                    zhangYiDaRequest.writeBackTaxResult(writeBackTaxResultVO);
+                }
+            }
+        }
+    }*/
+
+    /**
+     * 增值税-增值税及附加税费(增值税),
+     * 1.点击增值税按钮打开新页面
+     * 2.调用 AddedValueTaxXmTaxAction.applyTax 方法,执行新页面的相关内容,
+     */
+    public boolean applyAddedValueTax(String nationaltaxLoginname) throws IOException {
+        ElementAction action = new ElementAction();
+//        clickAddedValueTax();
+        clickAddedValueTaxNewUI();
+        action.pagefoload(10);
+
+        AddedValueTaxXmTaxAction addedValueTaxXmTaxAction = new AddedValueTaxXmTaxAction();
+        return addedValueTaxXmTaxAction.applyTax(nationaltaxLoginname);
+    }
+
+    /**
+     * 印花税
+     * 1.点击增值税按钮打开新页面
+     */
+    public boolean applyStampTax(String nationaltaxLoginname) throws IOException {
+        ElementAction action = new ElementAction();
+        clickStampTax();
+        action.pagefoload(10);
+
+        StampTaxXmTaxAction stampTaxXmTaxAction = new StampTaxXmTaxAction();
+        TaxVo taxVo = new TaxVo();
+        taxVo.setNationaltaxLoginname(nationaltaxLoginname);
+        taxVo.setStampTaxBelongItem(stampTaxBelongItem);
+        return stampTaxXmTaxAction.applyTax(taxVo);
+    }
+
+    /**
+     * 城建税、教育费附加、地方教育附加税（费） 申报
+     * @param nationaltaxLoginname
+     * @throws IOException
+     */
+    public boolean applyAdditionalTax(String nationaltaxLoginname) throws IOException {
+        ElementAction action = new ElementAction();
+        clickAdditionalTax();
+        action.pagefoload(10);
+
+        AdditionalTaxXmTaxAction taxAction = new AdditionalTaxXmTaxAction();
+        return taxAction.applyTax(nationaltaxLoginname);
+    }
+
+    /**
+     * 工会经费
+     *
+     * @throws IOException
+     */
+    public boolean applyLocalFunds(String nationaltaxLoginname) throws IOException {
+        ElementAction action = new ElementAction();
+        clickLocalFunds();
+        action.pagefoload(10);
+
+        LocalFundsXmTaxAction localFundsXmTaxAction = new LocalFundsXmTaxAction();
+        return localFundsXmTaxAction.applyTax(nationaltaxLoginname);
+    }
+
+    /**
+     * 鼠标经过 办税中心->税费申报及缴纳
+     */
+    private void commonClickNewUI() throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        TaxUtil.switchToMainWindow();
+        action.sleep(1);
+    }
+
+    /**
+     * 点击增值税按钮
+     */
+    private void clickAddedValueTaxNewUI() throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        commonClickNewUI();
+
+        action.switchToDefaultFrame();
+
+        // 定位 table_content,
+        action.switchToFrame(indexXmTaxPage.table_content());
+
+//        action.click(indexXmTaxPage.增值税及附加税费申报());
+        action.executeJS("showContent('bszx_0301','bszx_03','/tnsfwHome/index.do?menuid=bszx_03&menu_item_id=bszx_0301','1','N','')");// 直接 js,防止 IE 出错
+        action.pagefoload(10);
+
+        {
+            action.switchToDefaultFrame();
+
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+            // 防止 IE 不运行
+            action.executeJS("window.parent.showContent('bszx_030101','bszx_0301','http://wssb.xm-n-tax.gov.cn:7001/wssb/wssb/public/jsp/wssb.jsp?sblx=ZZS_YBNSR','2','Y','')");
+
+            // action.click(indexXmTaxPage.增值税申报());
+        }
+    }
+
+    /**
+     * 点击印花税
+     *
+     * @throws IOException
+     */
+    private void clickStampTax() throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        commonClickNewUI();
+
+        action.switchToDefaultFrame();
+
+        // 定位 table_content,
+        action.switchToFrame(indexXmTaxPage.table_content());
+
+//        action.click(indexXmTaxPage.其他申报());// 页面上的 html 用的是:<div onclick=""></div> IE 浏览器下,有时候会不起作用,因此,用直接执行 js 的方式
+        action.executeJS("showContent('bszx_0304','bszx_03','/tnsfwHome/index.do?menuid=bszx_03&menu_item_id=bszx_0304','1','N','')");
+        action.sleep(1);
+        action.pagefoload(10);
+
+        {
+            action.switchToDefaultFrame();
+
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+//            action.click(indexXmTaxPage.印花税申报());// <span onclick=""></span>,IE 下有时候不起作用,用直接执行 js 的方式,
+            action.executeJS("window.parent.showContent('bszx_030405','bszx_0304','/jsdzsb/yhssb/index.do','1','Y','ds')");
+            action.sleep(1);
+        }
+    }
+
+    /**
+     * 点击 城建税及附加,进行 城建税、教育费附加、地方教育附加税（费） 申报
+     * @throws IOException
+     */
+    private void clickAdditionalTax() throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        commonClickNewUI();
+
+        action.switchToDefaultFrame();
+
+        // 定位 table_content,
+        action.switchToFrame(indexXmTaxPage.table_content());
+
+//        action.click(indexXmTaxPage.其他申报());// IE 可能不起作用,
+        action.executeJS("showContent('bszx_0304','bszx_03','/tnsfwHome/index.do?menuid=bszx_03&menu_item_id=bszx_0304','1','N','')");
+        action.pagefoload(10);
+
+        {
+            action.switchToDefaultFrame();
+
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+//            action.click(indexXmTaxPage.城建税及附加申报());
+            action.executeJS("window.parent.showContent('bszx_030409','bszx_0304','/jsdzsb/fjssb/index.do','1','Y','ds')");
+        }
+    }
+
+    /**
+     * 地方各项基金费(在工会经费菜单下)
+     *
+     * @throws IOException
+     */
+    private void clickLocalFunds() throws IOException {
+        IndexXmTaxPage indexXmTaxPage = new IndexXmTaxPage();
+        ElementAction action = new ElementAction();
+        commonClickNewUI();
+
+        action.switchToDefaultFrame();
+
+        // 定位 table_content,
+        action.switchToFrame(indexXmTaxPage.table_content());
+
+        //action.click(indexXmTaxPage.综合申报());
+        action.executeJS("$('#bszx_0305 > div.menutitle').click()");// 防 IE,综合申报的点击
+        action.pagefoload(10);
+
+        action.switchToDefaultFrame();
+        {
+            // 定位 table_content,
+            action.switchToFrame(indexXmTaxPage.table_content());
+
+            // 定位 table_right_content,
+            action.switchToFrame(indexXmTaxPage.table_right_content());
+
+//            action.click(indexXmTaxPage.工会经费申报());
+            action.executeJS("$('#bszx_030501 > div > span.menutitle').click()");// 防 IE,工会经费申报 的点击
+        }
+    }
+
+}

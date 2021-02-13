@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>设置</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11;IE=10;IE=9;IE=8;IE=7;IE=EDGE">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/base.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/assets/css/style.css}">
+    <!--<script src="assets/js/jquery-1.11.1.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/default/easyui.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/icon.css}" />
+    <script type="text/javascript" th:src="@{/js/lib/v1.11.0-rc1-ext0.1/jquery.all.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/jquery-easyui-1.6.7/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/assets/js/waves.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/setting.js}"></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .font6 .form-lab {
+            width: 140px;
+        }
+    </style>
+    <script type="text/javascript">
+        var contextPath='[[${#httpServletRequest.getContextPath()}]]';
+    </script>
+</head>
+
+<body>
+<div class="page-center">
+    <!-- header -->
+    <div class="header" th:insert="~{navigation :: headBar}"></div>
+    <!-- page-body -->
+    <div class="wrapper">
+        <div class="main">
+            <div class="comt-top clearfix">
+                <a class="comt-title" th:href="@{/}">&lt;&nbsp;设置</a>
+            </div>
+            <div class="comt-tip p20" style="min-height: 300px">
+                <!-- 登录信息 -->
+                <div class="pt5 ml10 f14 c19 mb10 fwb">登录信息</div>
+                <ul class="form-grid font6">
+                    <li class="col-sm-12">
+                        <label class="form-lab">账益达用户名：</label>
+                        <div class="form-control">
+                            <input class="inp inp-royal" type="text" id="username" name="username" th:value="${corpSetting.username}">
+                        </div>
+                    </li>
+
+                    <li class="col-sm-12">
+                        <label class="form-lab">账益达密码：</label>
+                        <div class="form-control">
+                            <input class="inp inp-royal" type="password" id="password" name="password" th:value="${corpSetting.password}">
+                        </div>
+                    </li>
+
+                    <li class="col-sm-12">
+                        <label class="form-lab">登录域名：</label>
+                        <div class="form-control">
+                            <input class="inp inp-royal" type="text" id="domainName" name="domainName" th:value="${corpSetting.domainName}">
+                        </div>
+                    </li>
+                </ul>
+                <!-- 线 -->
+                <div class="mt15 bort mb15"></div>
+                <!-- 参数设置 -->
+                <div class="pt5 ml10 f14 c19 mb10 fwb">参数设置</div>
+                <ul class="form-grid font6">
+                    <li class="col-sm-12">
+                        <label class="form-lab">报税用户数：</label>
+                        <div class="form-control">
+                            <input class="inp inp-sm" type="text" id="taxThreadCount" name="taxThreadCount" th:value="${taxThreadCount.value}">
+                        </div>
+                    </li>
+                    <li class="col-sm-12">
+                        <label class="form-lab">拖动验证码重试次数：</label>
+                        <div class="form-control">
+                            <input class="inp inp-sm" type="text" id="dragCheckCodeRepeatCount" name="dragCheckCodeRepeatCount" th:value="${dragCheckCodeRepeatCount.value}">
+                        </div>
+                    </li>
+
+                    <!--
+                    <li class="col-sm-12">
+                        <label class="form-lab">验证码X偏移：</label>
+                        <div class="form-control">
+                            <input class="inp inp-sm" type="text" id="checkcodeOffsetX" name="checkcodeOffsetX" th:value="${checkcodeOffsetX.value}">
+                            <span class="form-text c99 f12 ml5">左空白增，右空白减</span>
+                        </div>
+                    </li>
+
+                    <li class="col-sm-12">
+                        <label class="form-lab">验证码Y偏移：</label>
+                        <div class="form-control">
+                            <input class="inp inp-sm" type="text" id="checkcodeOffsetY" name="checkcodeOffsetY" th:value="${checkcodeOffsetY.value}">
+                            <span class="form-text c99 f12 ml5">上空白增，下空白减</span>
+                            <a href="javascript:pingCheckcode()" class="btn btn-primary waves-effect waves-light ml5 f12">保存并测试验证码</a>
+                        </div>
+                    </li>
+                    -->
+                    <li class="col-sm-12">
+                        <label class="form-lab">浏览器路径：</label>
+                        <div class="form-control">
+                            <input class="inp w50off" type="text" id="browserPath" name="browserPath" th:value="${browserPath.value}">
+                            <a href="javascript:pingSelenium()" class="btn btn-primary waves-effect waves-light ml5 f12">保存并测试浏览器</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="bottom-btn tl pl20 mt10 pb20">
+                    <a class="btn btn-primary waves-effect waves-light" href="javascript:clickConfirm();">确定</a>
+                    <a class="btn btn-default waves-effect ml20" href="javascript:clickCancel();">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

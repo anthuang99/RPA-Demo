@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="mailTitle" value="厦门税务-自动化报告"/>
+  <parameter name="UserName" value="91350200MA344M8T68"/>
+  <parameter name="smtpPort" value=""/>
+  <parameter name="reportTitle" value="厦门税务-自动化报告"/>
+  <parameter name="nodeURL" value=""/>
+  <parameter name="smtpPassWord" value=""/>
+  <parameter name="reportUrl" value=""/>
+  <parameter name="PassWord" value="sbcw1101"/>
+  <parameter name="smtpHost" value=""/>
+  <parameter name="driver" value="ChromeDriver"/>
+  <parameter name="smtpUserName" value=""/>
+  <parameter name="recipients" value=""/>
+  <parameter name="BaseUrl" value="http://wsbsfwt1.xmtax.gov.cn:8001/"/>
+  <parameter name="logUrl" value=""/>
+  <listeners>
+    <listener class-name="org.webdriver.patatiumwebui.utils.TestListener"/>
+  </listeners>
+  <test name="登录成功并进入渠道编辑的测试用例(failed)">
+    <classes>
+      <class name="org.webdriver.patatiumwebui.Test.XmTaxTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="run"/>
+        </methods>
+      </class> <!-- org.webdriver.patatiumwebui.Test.XmTaxTest -->
+    </classes>
+  </test> <!-- 登录成功并进入渠道编辑的测试用例(failed) -->
+</suite> <!-- Failed suite [Suite] -->

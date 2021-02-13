@@ -1,0 +1,132 @@
+[2019-01-09 11:47:20,792] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$f1c2a59c 开始报税
+[2019-01-09 11:47:20,876] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-09 11:47:20,876] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-09 11:47:20,918] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-09 11:48:06,965] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-09 11:48:08,028] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-09 11:48:08,097] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-09 11:48:08,097] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-09 11:48:08,187] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-09 11:48:09,192] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:48:09,245] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-09 11:48:10,249] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:48:10,376] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206699949905M]
+[2019-01-09 11:48:11,381] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:48:11,457] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-09 11:48:12,458] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:48:12,510] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-09 11:48:15,806] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil request is:org.apache.http.client.methods.RequestBuilder@406a8fea
+[2019-01-09 11:48:15,807] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil return:{"message":"当前请求已经超时。","statusCode":"99"}
+[2019-01-09 11:48:15,807] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest statusCode not equal to 1001
+org.webdriver.patatiumwebui.exception.RPAException: statusCode not equal to 1001
+	at org.webdriver.patatiumwebui.httprequest.CheckcodeUtil.getCheckcode(CheckcodeUtil.java:76)
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getBase64AndTrialX(TaxUtil.java:125)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:113)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:365)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:336)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-09 11:48:17,485] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-09 11:51:47,268] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$f1c2a59c 开始报税
+[2019-01-09 11:51:47,326] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-09 11:51:47,326] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-09 11:51:47,370] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-09 11:52:33,259] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-09 11:52:34,308] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-09 11:52:38,076] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-09 11:52:38,076] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-09 11:52:38,164] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-09 11:52:39,168] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:52:39,241] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-09 11:52:40,244] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:52:40,358] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350203575017700A]
+[2019-01-09 11:52:41,361] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:52:41,435] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-09 11:52:42,440] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:52:42,494] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-09 11:52:46,532] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil request is:org.apache.http.client.methods.RequestBuilder@fb9e7a6
+[2019-01-09 11:52:46,532] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil return:{"message":"当前请求已经超时。","statusCode":"99"}
+[2019-01-09 11:52:46,532] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest statusCode not equal to 1001
+org.webdriver.patatiumwebui.exception.RPAException: statusCode not equal to 1001
+	at org.webdriver.patatiumwebui.httprequest.CheckcodeUtil.getCheckcode(CheckcodeUtil.java:76)
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getBase64AndTrialX(TaxUtil.java:125)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:113)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:365)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:336)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-09 11:52:47,994] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-09 11:55:10,828] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$e9b5d4fa 开始报税
+[2019-01-09 11:55:10,902] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-09 11:55:10,903] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-09 11:55:10,947] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-09 11:55:53,328] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-09 11:55:54,384] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-09 11:55:54,445] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-09 11:55:54,445] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-09 11:55:54,520] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-09 11:55:55,523] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:55:55,593] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-09 11:55:56,594] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:55:56,697] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206699949905M]
+[2019-01-09 11:55:57,703] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:55:57,772] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-09 11:55:58,776] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:55:58,832] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-09 11:56:02,062] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil request is:org.apache.http.client.methods.RequestBuilder@45c2cff0
+[2019-01-09 11:56:02,062] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil return:{"message":"当前请求已经超时。","statusCode":"99"}
+[2019-01-09 11:56:02,063] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest statusCode not equal to 1001
+org.webdriver.patatiumwebui.exception.RPAException: statusCode not equal to 1001
+	at org.webdriver.patatiumwebui.httprequest.CheckcodeUtil.getCheckcode(CheckcodeUtil.java:76)
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getBase64AndTrialX(TaxUtil.java:125)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:113)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:365)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:336)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-09 11:56:17,545] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------
+[2019-01-09 11:57:14,345] INFO  org.webdriver.patatiumwebui.App$$EnhancerBySpringCGLIB$$e9b5d4fa 开始报税
+[2019-01-09 11:57:14,411] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2019-01-09 11:57:14,411] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取 application.yml 配置的ChromeDriver浏览器并将其初始化
+
+[2019-01-09 11:57:14,456] ERROR org.webdriver.patatiumwebui.utils.TestBaseCase driver copy path is:/Users/anthonyhuang/Downloads/RPA-Demo/driver/chromedriver
+[2019-01-09 11:57:53,926] INFO  org.webdriver.patatiumwebui.pageObject.LoginXmTaxPage 打开浏览器，访问https://wsbsfwt2.xmtax.gov.cn/tlogin/index.do网址!
+[2019-01-09 11:57:54,975] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：浏览器版本提示确定按钮方式[By.xpath://*[@id='layui-layer1']/div[3]/a]
+[2019-01-09 11:57:55,031] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：浏览器版本提示确定按钮[By.xpath://*[@id='layui-layer1']/div[3]/a]成功！
+[2019-01-09 11:57:55,031] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：登录链接方式[By.xpath://*[@id='Login']/a]
+[2019-01-09 11:57:55,119] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：登录链接[By.xpath://*[@id='Login']/a]成功！
+[2019-01-09 11:57:56,123] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:57:56,193] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：用户名[By.xpath://*[@id='loginId']]成功！
+[2019-01-09 11:57:57,196] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：用户名方式[By.xpath://*[@id='loginId']]
+[2019-01-09 11:57:57,297] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：用户名[By.xpath://*[@id='loginId']value:91350206699949905M]
+[2019-01-09 11:57:58,303] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:57:58,369] INFO  org.webdriver.patatiumwebui.utils.ElementAction click元素：密码2[By.xpath://*[@id='userPassword']]成功！
+[2019-01-09 11:57:59,373] INFO  org.webdriver.patatiumwebui.utils.ElementAction 查找元素：密码2方式[By.xpath://*[@id='userPassword']]
+[2019-01-09 11:57:59,427] INFO  org.webdriver.patatiumwebui.utils.ElementAction input输入：密码2[By.xpath://*[@id='userPassword']value:guohao0310]
+[2019-01-09 11:58:03,635] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil request is:org.apache.http.client.methods.RequestBuilder@3435b9f7
+[2019-01-09 11:58:03,635] ERROR org.webdriver.patatiumwebui.httprequest.CheckcodeUtil return:{"message":"当前请求已经超时。","statusCode":"99"}
+[2019-01-09 11:58:03,635] ERROR org.webdriver.patatiumwebui.Test.XmTaxTest statusCode not equal to 1001
+org.webdriver.patatiumwebui.exception.RPAException: statusCode not equal to 1001
+	at org.webdriver.patatiumwebui.httprequest.CheckcodeUtil.getCheckcode(CheckcodeUtil.java:76)
+	at org.webdriver.patatiumwebui.utils.TaxUtil.getBase64AndTrialX(TaxUtil.java:125)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.loginAction(LoginXmTaxAction.java:113)
+	at org.webdriver.patatiumwebui.action.LoginXmTaxAction.<init>(LoginXmTaxAction.java:66)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.doLogin(XmTaxTest.java:365)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest.login(XmTaxTest.java:336)
+	at org.webdriver.patatiumwebui.Test.XmTaxTest$1.run(XmTaxTest.java:271)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-01-09 11:58:32,633] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase -------------结束测试，并关闭退出浏览器-------------

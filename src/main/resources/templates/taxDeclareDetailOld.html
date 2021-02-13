@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>报税详情</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/default/easyui.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/js/lib/jquery-easyui-1.6.7/themes/icon.css}" />
+    <script type="text/javascript" th:src="@{/js/lib/v1.11.0-rc1-ext0.1/jquery.all.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/jquery-easyui-1.6.7/jquery.easyui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/1.6.0-ext0.1/underscore.js}"></script>
+    <script type="text/javascript" th:src="@{/js/lib/1.6.0-ext0.1/underscore-application-ext.js}"></script>
+    <script type="text/javascript" th:src="@{/js/taxDeclareDetailOld.js}"></script>
+    <script type="text/javascript">
+        var contextPath = '[[${#httpServletRequest.getContextPath()}]]';
+    </script>
+</head>
+<body>
+<!--
+<div>
+    <ul>
+        <li  th:each="user:${users}">
+            <span th:text="${user.id}"></span>-
+            <span th:text="${user.name}"></span>-
+            <span th:text="${user.age}"></span>-
+            <span th:text="${user.address}"></span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div>
+    <table width="80%" style="table-layout: fixed">
+        <tr>
+            <td width="90px;">
+                公司名称：
+            </td>
+            <td width="180px">
+                <input type="text" id="name" name="name" value="" />
+            </td>
+            <td width="100px;">
+                国税登录名：
+            </td>
+            <td width="180px;">
+                <input type="text" id="nationaltaxLoginname" name="nationaltaxLoginname" value="" />
+            </td>
+            <td width="170px;">
+                申报所属期（月份）：
+            </td>
+            <td>
+                <input type="text" id="createM" name="createM" value="" />
+            </td>
+        </tr>
+    </table>
+    <input type="button" id="queryBtn" name="queryBtn" value="查询" />
+</div>
+<div>
+    <table id="dg"></table>
+</div>
+</body>
+</html>
